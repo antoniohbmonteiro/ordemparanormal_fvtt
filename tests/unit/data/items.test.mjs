@@ -14,6 +14,7 @@ describe("ArmamentData.defineSchema()", () => {
 		const schema = ArmamentData.defineSchema();
 		const keys = Object.keys(schema);
 		expect(keys).toContain("description");
+		expect(keys).toContain("chatDescription");
 		expect(keys).toContain("weight");
 		expect(keys).toContain("category");
 		expect(keys).toContain("using");
@@ -63,6 +64,7 @@ describe("GeneralEquipmentData.defineSchema()", () => {
 		const schema = GeneralEquipmentData.defineSchema();
 		const keys = Object.keys(schema);
 		expect(keys).toContain("description");
+		expect(keys).toContain("chatDescription");
 		expect(keys).toContain("weight");
 		expect(keys).toContain("category");
 		expect(keys).toContain("using");
@@ -76,6 +78,7 @@ describe("ProtectionData.defineSchema()", () => {
 		const schema = ProtectionData.defineSchema();
 		const keys = Object.keys(schema);
 		expect(keys).toContain("description");
+		expect(keys).toContain("chatDescription");
 		expect(keys).toContain("weight");
 		expect(keys).toContain("category");
 		expect(keys).toContain("using");
@@ -93,6 +96,7 @@ describe("AbilityData.defineSchema()", () => {
 		expect(keys).toContain("abilityType");
 		expect(keys).toContain("preRequisite");
 		expect(keys).toContain("description");
+		expect(keys).toContain("chatDescription");
 		expect(keys).toContain("activation");
 	});
 
@@ -109,6 +113,7 @@ describe("RitualData.defineSchema()", () => {
 		const schema = RitualData.defineSchema();
 		const keys = Object.keys(schema);
 		expect(keys).toContain("description");
+		expect(keys).toContain("chatDescription");
 		expect(keys).toContain("circle");
 		expect(keys).toContain("element");
 		expect(keys).toContain("target");
@@ -143,16 +148,15 @@ describe("ClassData.defineSchema()", () => {
 		const keys = Object.keys(schema);
 		expect(keys).toContain("id");
 		expect(keys).toContain("description");
+		expect(keys).toContain("chatDescription");
 		expect(keys).toContain("hpInitial");
 		expect(keys).toContain("hpPerLevel");
 		expect(keys).toContain("peInitial");
 		expect(keys).toContain("pePerLevel");
 		expect(keys).toContain("sanInitial");
 		expect(keys).toContain("sanPerLevel");
-		expect(keys).toContain("skillCount");
-		expect(keys).toContain("grantedSkills");
-		expect(keys).toContain("proficiencies");
-		expect(keys).toContain("abilities");
+		expect(keys).toContain("pdInitial");
+		expect(keys).toContain("pdPerLevel");
 		expect(keys).toContain("isSurvivor");
 	});
 
@@ -167,8 +171,7 @@ describe("OriginData.defineSchema()", () => {
 		const keys = Object.keys(schema);
 		expect(keys).toContain("id");
 		expect(keys).toContain("description");
-		expect(keys).toContain("grantedSkills");
-		expect(keys).toContain("ability");
+		expect(keys).toContain("chatDescription");
 	});
 
 	it("has singleton metadata enabled", () => {
@@ -182,8 +185,7 @@ describe("PathData.defineSchema()", () => {
 		const keys = Object.keys(schema);
 		expect(keys).toContain("id");
 		expect(keys).toContain("description");
-		expect(keys).toContain("preRequisite");
-		expect(keys).toContain("abilities");
+		expect(keys).toContain("chatDescription");
 	});
 
 	it("has singleton metadata enabled", () => {
