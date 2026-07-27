@@ -160,12 +160,13 @@
 								</div>
 							</div>
 
-							{{! Descrição Oculta/Expansível }}
-							<div class="item-description">
-								<div class="description-body-content">
-									{{{item.system.description}}}
+							{{#if item.isExpanded}}
+								<div class="item-description">
+									<div class="description-body-content">
+										{{{item.enrichedDescription}}}
+									</div>
 								</div>
-							</div>
+							{{/if}}
 						</li>
 					{{/each}}
 				</ol>
@@ -205,9 +206,13 @@
 									<a class="item-btn btn-delete" data-action="deleteDoc"><i class="fas fa-trash"></i></a>
 								</div>
 							</div>
-							<div class="item-description">
-								<div class="description-body-content">{{{item.system.description}}}</div>
-							</div>
+							{{#if item.isExpanded}}
+								<div class="item-description">
+									<div class="description-body-content">
+										{{{item.enrichedDescription}}}
+									</div>
+								</div>
+							{{/if}}
 						</li>
 					{{/each}}
 				</ol>
