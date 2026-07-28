@@ -146,7 +146,7 @@ export class OrdemActorSheet extends api.HandlebarsApplicationMixin(sheets.Actor
 		});
 
 		// Prepara os dados do Agente e seus Items.
-		this._prepareItems(context);
+		await this._prepareItems(context);
 
 		return context;
 	}
@@ -297,7 +297,7 @@ export class OrdemActorSheet extends api.HandlebarsApplicationMixin(sheets.Actor
 	 *
 	 * @return {undefined}
 	 */
-	_prepareItems(context) {
+	async _prepareItems(context) {
 		const details = { origin: null, class: null, path: null };
 		const protection = [];
 		const generalEquipment = [];
@@ -315,11 +315,26 @@ export class OrdemActorSheet extends api.HandlebarsApplicationMixin(sheets.Actor
 		// Pega o rótulo global (PE ou PD) que já foi definido no _prepareContext com base na configuração
 		const labelCusto = context.custoLabel || "PE";
 
-		// const invalid = [];
+		this.expanded ??= new Set();
 
 		// Iterate through items, allocating to containers
 		for (const i of this.document.items) {
 			i.img = i.img || DEFAULT_TOKEN;
+
+			// Sinaliza para o HTML se este item está aberto
+			i.isExpanded = this.expanded.has(i.id);
+
+			if (i.isExpanded && i.system.description) {
+				if (!i.enrichedDescription || i._cachedDescriptionText !== i.system.description) {
+					i.enrichedDescription = await foundry.applications.ux.TextEditor.implementation.enrichHTML(i.system.description, {
+						secrets: this.document.isOwner,
+						rollData: this.actor.getRollData(),
+						relativeTo: this.actor,
+					});
+
+					i._cachedDescriptionText = i.system.description;
+				}
+			}
 
 			// Creating the data to use an item
 			i.system.using = !i.system.using ? [true, "fas"] : i.system.using;
@@ -431,24 +446,7 @@ export class OrdemActorSheet extends api.HandlebarsApplicationMixin(sheets.Actor
 
 		// V13 DOM API (no jQuery)
 		for (const toggle of this.element.querySelectorAll(".item-toggle")) {
-			toggle.addEventListener("click", (event) => {
-				event.preventDefault();
-				event.stopPropagation();
-
-				// Find parent item and description
-				const li = event.currentTarget.closest(".item");
-				const desc = li.querySelector(".item-description");
-				console.log(li, desc.style.display);
-
-				if (desc) {
-					const computedDisplay = window.getComputedStyle(desc).display;
-					if (computedDisplay === "none") {
-						desc.style.display = "block";
-					} else {
-						desc.style.display = "none";
-					}
-				}
-			});
+			toggle.addEventListener("click", this._onToggleDescription.bind(this));
 		}
 
 		for (const compendium of this.element.querySelectorAll(".compendium-event-contextmenu")) {
@@ -659,16 +657,20 @@ export class OrdemActorSheet extends api.HandlebarsApplicationMixin(sheets.Actor
 	}
 
 	/** */
-	static _onToggleDescription(event) {
+	_onToggleDescription(event) {
 		event.preventDefault();
 		const li = event.currentTarget.closest(".item");
 		const itemId = li.dataset.itemId;
+
+		// Garante que o Set existe na primeira vez que for clicado
+		this.expanded ??= new Set();
 
 		if (this.expanded.has(itemId)) {
 			this.expanded.delete(itemId);
 		} else {
 			this.expanded.add(itemId);
 		}
+		// Força a re-renderização da ficha para que o _prepareItems processe o HTML
 		this.render();
 	}
 
