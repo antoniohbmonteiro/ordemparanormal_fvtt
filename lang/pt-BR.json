@@ -674,5 +674,41 @@
 
 	"EFFECT": {
 		"TabDuration": "Duração"
-	}
+	},
+
+	"op.agentConfigTitle": "Configurações: {name}",
+	"WARN.singletonItemExists": "Você já possui um item do tipo '{type}' na sua ficha! Remova o antigo primeiro.",
+	"op.biographyPlaceholder": "A personalidade, aparência e história do seu personagem aqui.",
+	"op.goalsPlaceholder": "Os seus objetivos aqui.",
+	"op.itemDescriptionPlaceholder": "A descrição do seu item aqui.",
+	"WARN.itemNotFoundOnActor": "Item não encontrado no ator.",
+	"op.threatSheetTitle": "Ficha de Ameaça",
+	"op.dialogReplaceItemTitle": "Substituir {type}?",
+	"op.dialogReplaceItemContent": "<p>Seu personagem já possui <strong>{existing}</strong>.</p><p>Deseja substituí-lo por <strong>{replacement}</strong>?</p>",
+	"op.agentNamePlaceholder": "Nome do Agente",
+	"op.patent": "Patente",
+	"op.prestigePoints": "Pontos de Prestígio",
+	"op.categoryLimits": "Limites por Categoria",
+	"op.profAbbr": "Prof.",
+	"op.criticalAbbr": "Crit.",
+	"op.categoryAbbr": "Cat.",
+	"op.quantityAbbr": "Qtd.",
+	"op.sendToChat": "Enviar para o chat",
+	"op.markEquipped": "Marcar como equipado",
+	"op.createEquipment": "Criar Equipamento",
+	"op.createProtection": "Criar Proteção",
+	"WARN.overweightAlert": "ALERTA: SOBREPESO DETECTADO",
+	"op.inventorySpaces": "ESPAÇOS DO INVENTÁRIO",
+	"op.specialRituals": "Rituais Especiais",
+	"op.otherRituals": "Outros Rituais",
+	"op.createRitualCircle": "Criar ritual de círculo",
+	"op.createSpecialRitual": "Criar Ritual Especial",
+	"op.totalSkillTooltip": "Total (Treino + Bônus)",
+	"op.manageResources": "Gerenciar Recursos",
+	"op.hideResources": "Ocultar Recursos",
+	"op.resource": "Recurso",
+	"op.otherUnclassifiedItems": "Outros Itens (Não Classificados)",
+	"op.createAbility": "Criar Habilidade",
+	"op.agentBiography": "Biografia do Agente",
+	"op.missionGoals": "Objetivos da Missão"
 }

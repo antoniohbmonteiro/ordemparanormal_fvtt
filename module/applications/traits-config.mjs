@@ -13,7 +13,7 @@ export class TraitsConfig extends HandlebarsApplicationMixin(ApplicationV2) {
 			height: "auto",
 		},
 		window: {
-			title: "Configurar Características",
+			title: "op.traitsTitle",
 			resizable: false,
 		},
 		form: {

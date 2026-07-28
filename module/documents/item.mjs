@@ -104,7 +104,7 @@ export class OrdemItem extends Item {
 				actorId: actor?.id,
 				hasTokenId: !!card.dataset.tokenId,
 			});
-			ui.notifications.warn("Item não encontrado no ator.");
+			ui.notifications.warn(game.i18n.localize("WARN.itemNotFoundOnActor"));
 			button.disabled = false;
 			return;
 		}

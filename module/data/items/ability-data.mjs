@@ -3,8 +3,8 @@ export class AbilityData extends foundry.abstract.TypeDataModel {
 		const fields = foundry.data.fields;
 		return {
 			id: new fields.NumberField({ required: true, integer: true, initial: 0 }),
-			description: new fields.HTMLField({ initial: "A descrição do seu item aqui." }),
-			chatDescription: new fields.HTMLField({ initial: "A descrição do seu item aqui." }),
+			description: new fields.HTMLField({ initial: game.i18n.localize("op.itemDescriptionPlaceholder") }),
+			chatDescription: new fields.HTMLField({ initial: "" }),
 			abilityType: new fields.StringField({ initial: "" }),
 			cost: new fields.NumberField({ integer: true, initial: 0 }),
 			preRequisite: new fields.StringField({ initial: "" }),

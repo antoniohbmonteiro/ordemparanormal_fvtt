@@ -2,8 +2,8 @@ export class RitualData extends foundry.abstract.TypeDataModel {
 	static defineSchema() {
 		const fields = foundry.data.fields;
 		return {
-			description: new fields.HTMLField({ initial: "A descrição do seu ritual aqui." }),
-			chatDescription: new fields.HTMLField({ initial: "A descrição do seu item aqui." }),
+			description: new fields.HTMLField({ initial: game.i18n.localize("op.itemDescriptionPlaceholder") }),
+			chatDescription: new fields.HTMLField({ initial: "" }),
 			circle: new fields.NumberField({ required: true, integer: true, initial: 1 }),
 			element: new fields.StringField({ initial: "" }),
 			target: new fields.StringField({ initial: "" }),

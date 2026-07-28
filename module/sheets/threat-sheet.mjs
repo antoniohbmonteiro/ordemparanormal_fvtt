@@ -26,7 +26,7 @@ export class OrdemThreatSheet extends api.HandlebarsApplicationMixin(sheets.Acto
 		position: { width: 600, height: 820 },
 		window: {
 			resizable: true,
-			title: "Ficha de Ameaça",
+			title: "op.threatSheetTitle",
 		},
 		form: {
 			submitOnChange: true,

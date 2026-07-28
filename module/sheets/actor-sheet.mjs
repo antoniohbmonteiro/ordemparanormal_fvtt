@@ -473,7 +473,7 @@ export class OrdemActorSheet extends api.HandlebarsApplicationMixin(sheets.Actor
 			controls.unshift({
 				action: "openConfig",
 				icon: "fas fa-id-card",
-				label: "Configurações do Agente",
+				label: game.i18n.localize("op.agentConfigTitle"),
 			});
 		}
 
@@ -943,12 +943,13 @@ export class OrdemActorSheet extends api.HandlebarsApplicationMixin(sheets.Actor
 				const existingItem = existingItems[0]; // Pega o item atual da ficha
 
 				// Pausa o código e abre a janela de confirmação do Foundry
+				const typeLabel = game.i18n.localize(`TYPES.Item.${item.type}`);
 				const confirmar = await Dialog.confirm({
-					title: `Substituir ${item.type.toUpperCase()}?`,
-					content: `
-            <p>Seu personagem já possui <strong>${existingItem.name}</strong>.</p>
-            <p>Deseja substituí-lo por <strong>${item.name}</strong>?</p>
-          `,
+					title: game.i18n.format("op.dialogReplaceItemTitle", { type: typeLabel.toUpperCase() }),
+					content: game.i18n.format("op.dialogReplaceItemContent", {
+						existing: existingItem.name,
+						replacement: item.name,
+					}),
 					yes: () => true,
 					no: () => false,
 					defaultYes: false,

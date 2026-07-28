@@ -2,7 +2,7 @@
 
 	<header class="inventory-prestige-header op-shadow">
 		<div class="patent-box">
-			<span class="label"><i class="fas fa-medal"></i> Patente</span>
+			<span class="label"><i class="fas fa-medal"></i> {{localize "op.patent"}}</span>
 			<input
 				type="text"
 				name="system.patent.name"
@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="prestige-box">
-			<span class="label"><i class="fas fa-id-badge"></i> Pontos de Prestígio</span>
+			<span class="label"><i class="fas fa-id-badge"></i> {{localize "op.prestigePoints"}}</span>
 			<input
 				type="text"
 				name="system.patent.prestigePoints"
@@ -27,7 +27,7 @@
 		</div>
 
 		<div class="category-limits">
-			<span class="section-title"><i class="fas fa-shield-halved"></i> Limites por Categoria</span>
+			<span class="section-title"><i class="fas fa-shield-halved"></i> {{localize "op.categoryLimits"}}</span>
 			<div class="limits-grid">
 				<div class="limit-badge font-cat-1">
 					<label>I</label>
@@ -82,10 +82,10 @@
 		<div class="inventory-category op-shadow">
 			<div class="inventory-list-header">
 				<span class="col-name"><i class="fa-solid fa-gun"></i> {{localize "op.armaments"}}</span>
-				<span class="col-prop">Prof.</span>
-				<span class="col-prop">Crit.</span>
-				<span class="col-prop">Alcance</span>
-				<span class="col-space">Espaço</span>
+				<span class="col-prop">{{localize "op.profAbbr"}}</span>
+				<span class="col-prop">{{localize "op.criticalAbbr"}}</span>
+				<span class="col-prop">{{localize "op.range"}}</span>
+				<span class="col-space">{{localize "op.space"}}</span>
 				<span class="col-controls">
 					{{#if @root.editable}}
 						<a
@@ -180,15 +180,15 @@
 			<div class="inventory-list-header">
 				<span class="col-name"><i class="fa-solid fa-screwdriver-wrench"></i>
 					{{localize "op.generalEquipment.plural"}}</span>
-				<span class="col-category">Cat.</span>
-				<span class="col-space">Espaço</span>
-				<span class="col-quantity">Qtd.</span>
+				<span class="col-category">{{localize "op.categoryAbbr"}}</span>
+				<span class="col-space">{{localize "op.space"}}</span>
+				<span class="col-quantity">{{localize "op.quantityAbbr"}}</span>
 				<span class="col-controls">
 					{{#if @root.editable}}
 						<a
 							class="item-control item-create"
 							data-action="createDoc"
-							title="Criar Equipamento"
+							title="{{localize 'op.createEquipment'}}"
 							data-document-class="Item"
 							data-type="generalEquipment"
 						>
@@ -298,15 +298,15 @@
 		<div class="inventory-category op-shadow">
 			<div class="inventory-list-header">
 				<span class="col-name"><i class="fa-solid fa-shield"></i> {{localize "op.protection.plural"}}</span>
-				<span class="col-category">Defesa</span>
-				<span class="col-space">Espaço</span>
-				<span class="col-quantity">Qtd.</span>
+				<span class="col-category">{{localize "op.defense"}}</span>
+				<span class="col-space">{{localize "op.space"}}</span>
+				<span class="col-quantity">{{localize "op.quantityAbbr"}}</span>
 				<span class="col-controls">
 					{{#if @root.editable}}
 						<a
 							class="item-control"
 							data-action="createDoc"
-							title="Criar Proteção"
+							title="{{localize 'op.createProtection'}}"
 							data-document-class="Item"
 							data-type="protection"
 						>
@@ -383,12 +383,16 @@
 							</div>
 
 							<div class="item-meta-col col-controls">
-								<a class="item-btn" data-action="onSendChat" title="Enviar para o chat"><i class="fas fa-message"></i></a>
-								<a class="item-btn btn-star" data-action="onMarkItem" title="Marcar como equipado"><i
+								<a class="item-btn" data-action="onSendChat" title="{{localize 'op.sendToChat'}}"><i
+										class="fas fa-message"
+									></i></a>
+								<a class="item-btn btn-star" data-action="onMarkItem" title="{{localize 'op.markEquipped'}}"><i
 										class="{{item.system.using.class}} fa-star"
 									></i></a>
-								<a class="item-btn" data-action="viewDoc" title="Editar Item"><i class="fas fa-edit"></i></a>
-								<a class="item-btn btn-delete" data-action="deleteDoc" title="Apagar Item"><i class="fas fa-trash"></i></a>
+								<a class="item-btn" data-action="viewDoc" title="{{localize 'op.edit'}}"><i class="fas fa-edit"></i></a>
+								<a class="item-btn btn-delete" data-action="deleteDoc" title="{{localize 'op.delete'}}"><i
+										class="fas fa-trash"
+									></i></a>
 							</div>
 						</div>
 
@@ -410,7 +414,7 @@
 		<div class="space-status-bar">
 			<span class="space-label">
 				<i class="fas fa-scale-unbalanced"></i>
-				{{#if system.spaces.pctMax}}ALERTA: SOBREPESO DETECTADO{{else}}ESPAÇOS DO INVENTÁRIO{{/if}}
+				{{#if system.spaces.pctMax}}{{localize "WARN.overweightAlert"}}{{else}}{{localize "op.inventorySpaces"}}{{/if}}
 			</span>
 			<div class="space-counter">
 				<span class="current">{{system.spaces.value}}</span>

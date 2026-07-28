@@ -15,7 +15,7 @@ export class ResistanceConfig extends HandlebarsApplicationMixin(ApplicationV2) 
 			height: "auto",
 		},
 		window: {
-			title: "Configurar Resistências",
+			title: "op.resistancesTitle",
 			resizable: false,
 		},
 		form: {

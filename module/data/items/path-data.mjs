@@ -3,8 +3,8 @@ export class PathData extends foundry.abstract.TypeDataModel {
 		const fields = foundry.data.fields;
 		return {
 			id: new fields.NumberField({ required: true, integer: true, initial: 0 }),
-			description: new fields.HTMLField({ initial: "A descrição do seu item aqui." }),
-			chatDescription: new fields.HTMLField({ initial: "A descrição do seu item aqui." }),
+			description: new fields.HTMLField({ initial: game.i18n.localize("op.itemDescriptionPlaceholder") }),
+			chatDescription: new fields.HTMLField({ initial: "" }),
 		};
 	}
 
@@ -27,7 +27,8 @@ export class PathData extends foundry.abstract.TypeDataModel {
 
 		// Se for um item restrito E o ator já possuir pelo menos 1 item desse mesmo tipo...
 		if (isSingleton && this.itemTypes[item.type].length > 0) {
-			ui.notifications.error(`Você já possui um item do tipo ${item.type} na sua ficha! Remova o antigo primeiro.`);
+			const typeLabel = game.i18n.localize(`TYPES.Item.${item.type}`);
+			ui.notifications.error(game.i18n.format("WARN.singletonItemExists", { type: typeLabel }));
 			// Retornar false cancela a gravação no banco de dados instantaneamente
 			return false;
 		}

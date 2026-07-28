@@ -672,5 +672,41 @@
 
 	"EFFECT": {
 		"TabDuration": "Duration"
-	}
+	},
+
+	"op.agentConfigTitle": "Configuration: {name}",
+	"WARN.singletonItemExists": "You already have an item of type '{type}' on your sheet! Remove the existing one first.",
+	"op.biographyPlaceholder": "Your character's personality, appearance, and history here.",
+	"op.goalsPlaceholder": "Your goals here.",
+	"op.itemDescriptionPlaceholder": "Your item's description here.",
+	"WARN.itemNotFoundOnActor": "Item not found on the actor.",
+	"op.threatSheetTitle": "Threat Sheet",
+	"op.dialogReplaceItemTitle": "Replace {type}?",
+	"op.dialogReplaceItemContent": "<p>Your character already has <strong>{existing}</strong>.</p><p>Do you want to replace it with <strong>{replacement}</strong>?</p>",
+	"op.agentNamePlaceholder": "Agent Name",
+	"op.patent": "Rank",
+	"op.prestigePoints": "Prestige Points",
+	"op.categoryLimits": "Category Limits",
+	"op.profAbbr": "Prof.",
+	"op.criticalAbbr": "Crit.",
+	"op.categoryAbbr": "Cat.",
+	"op.quantityAbbr": "Qty.",
+	"op.sendToChat": "Send to chat",
+	"op.markEquipped": "Mark as equipped",
+	"op.createEquipment": "Create Gear",
+	"op.createProtection": "Create Protection",
+	"WARN.overweightAlert": "ALERT: OVERWEIGHT DETECTED",
+	"op.inventorySpaces": "INVENTORY SLOTS",
+	"op.specialRituals": "Special Rituals",
+	"op.otherRituals": "Other Rituals",
+	"op.createRitualCircle": "Create Circle Ritual",
+	"op.createSpecialRitual": "Create Special Ritual",
+	"op.totalSkillTooltip": "Total (Training + Bonus)",
+	"op.manageResources": "Manage Resources",
+	"op.hideResources": "Hide Resources",
+	"op.resource": "Resource",
+	"op.otherUnclassifiedItems": "Other Items (Unclassified)",
+	"op.createAbility": "Create Ability",
+	"op.agentBiography": "Agent Biography",
+	"op.missionGoals": "Mission Goals"
 }

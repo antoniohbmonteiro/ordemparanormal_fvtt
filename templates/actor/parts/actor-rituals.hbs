@@ -20,7 +20,7 @@
 					<span class="col-name">
 						{{#ifEquals circle 5}}
 							<i class="fas fa-book-journal-whills"></i>
-							Rituais Especiais
+							{{localize "op.specialRituals"}}
 						{{else}}
 							<i class="fas fa-circle-nodes"></i>
 							{{circle}}º
@@ -42,7 +42,7 @@
 						{{#if @root.editable}}
 							<a
 								class="item-control item-create"
-								title="Criar ritual de {{circle}}º círculo"
+								title="{{localize 'op.createRitualCircle'}} {{circle}}"
 								data-action="createDoc"
 								data-document-class="Item"
 								data-type="ritual"
@@ -121,14 +121,19 @@
 		{{#if rituals.invalid}}
 			<div class="inventory-category invalid-category">
 				<div class="inventory-list-header alert-header">
-					<span class="col-name"><i class="fas fa-triangle-exclamation"></i> Outros Rituais</span>
+					<span class="col-name"><i class="fas fa-triangle-exclamation"></i> {{localize "op.otherRituals"}}</span>
 					<span class="col-range">{{localize "op.range"}}</span>
 					<span class="col-target">{{localize "op.area"}}</span>
 					<span class="col-duration">{{localize "op.duration"}}</span>
 					<span class="col-resist">{{localize "op.resistance"}}</span>
 					<span class="col-controls-mini">
 						{{#if @root.editable}}
-							<a class="item-control item-create" data-action="createDoc" title="Criar Ritual Especial" data-type="ritual">
+							<a
+								class="item-control item-create"
+								data-action="createDoc"
+								title="{{localize 'op.createSpecialRitual'}}"
+								data-type="ritual"
+							>
 								<i class="fas fa-plus"></i>
 							</a>
 						{{/if}}

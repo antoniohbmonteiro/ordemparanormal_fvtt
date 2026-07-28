@@ -13,7 +13,7 @@
 			{{! Nome e Progresso }}
 			<div class="header-identify">
 				<h1 class="charname">
-					<input name="name" type="text" value="{{actor.name}}" placeholder="Nome do Agente" />
+					<input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'op.agentNamePlaceholder'}}" />
 				</h1>
 
 				<div class="progress-group flexrow">
@@ -68,7 +68,7 @@
 							<span class="item-name-text truncate-text">{{details.origin.name}}</span>
 						</div>
 						<div class="item-controls dynamic-trash">
-							<a class="item-control" data-action="deleteDoc" title="Remover"><i class="fas fa-trash"></i></a>
+							<a class="item-control" data-action="deleteDoc" title="{{localize 'op.delete'}}"><i class="fas fa-trash"></i></a>
 						</div>
 					</div>
 				{{else}}
@@ -79,7 +79,7 @@
 						data-key="origin"
 					>
 						<i class="fas fa-plus"></i>
-						<span class="truncate-text">Origem</span>
+						<span class="truncate-text">{{localize "TYPES.Item.origin"}}</span>
 					</div>
 				{{/if}}
 
@@ -108,7 +108,7 @@
 						data-key="class"
 					>
 						<i class="fas fa-plus"></i>
-						<span class="truncate-text">Classe</span>
+						<span class="truncate-text">{{localize "TYPES.Item.class"}}</span>
 					</div>
 				{{/if}}
 
@@ -137,7 +137,7 @@
 						data-key="path"
 					>
 						<i class="fas fa-plus"></i>
-						<span class="truncate-text">Trilha</span>
+						<span class="truncate-text">{{localize "TYPES.Item.path"}}</span>
 					</div>
 				{{/if}}
 			</div>

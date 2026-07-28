@@ -24,7 +24,7 @@ export default class RollConfigurationDialog extends DialogOP {
 	static DEFAULT_OPTIONS = {
 		classes: ["roll-configuration"],
 		window: {
-			title: "Titulo",
+			title: "op.RollConfiguration.Configuration",
 			icon: "fa-solid fa-dice",
 		},
 		form: {

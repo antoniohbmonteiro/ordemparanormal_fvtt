@@ -185,8 +185,8 @@ export class AgentData extends foundry.abstract.TypeDataModel {
 					label: new fields.StringField({ initial: "" }),
 				}),
 			}),
-			biography: new fields.HTMLField({ initial: "A personalidade, aparência e história do seu personagem aqui." }),
-			goals: new fields.HTMLField({ initial: "Os seus objetivos aqui." }),
+			biography: new fields.HTMLField({ initial: game.i18n.localize("op.biographyPlaceholder") }),
+			goals: new fields.HTMLField({ initial: game.i18n.localize("op.goalsPlaceholder") }),
 			ritual: new fields.SchemaField({
 				DT: new fields.NumberField({ integer: true, initial: 0 }),
 			}),

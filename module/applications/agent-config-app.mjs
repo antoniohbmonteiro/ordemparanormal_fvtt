@@ -9,7 +9,7 @@ export class AgentConfigApp extends HandlebarsApplicationMixin(ApplicationV2) {
 			height: "auto",
 		},
 		window: {
-			title: "Configurações do Agente",
+			title: "op.agentConfigTitle",
 			resizable: false,
 		},
 		form: {
@@ -38,7 +38,7 @@ export class AgentConfigApp extends HandlebarsApplicationMixin(ApplicationV2) {
 		options = super._initializeApplicationOptions(options);
 		console.log("AgentConfigApp options:", options);
 		options.uniqueId = `agent-config-${options.document.uuid}`;
-		options.window.title = `Configurações: ${options.document.name}`;
+		options.window.title = game.i18n.format("op.agentConfigTitle", { name: options.document.name });
 		return options;
 	}
 

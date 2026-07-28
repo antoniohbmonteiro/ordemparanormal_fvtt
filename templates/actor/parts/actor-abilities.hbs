@@ -2,11 +2,15 @@
 	<div class="tactical-control-bar">
 		<a
 			data-action="toggleResources"
-			title="Gerenciar Recursos"
+			title="{{localize 'op.manageResources'}}"
 			class="toggle-btn {{ternary mostrarRecursos 'is-active' ''}}"
 		>
 			<i class="fas fa-boxes"></i>
-			{{#if mostrarRecursos}}Ocultar Recursos{{else}}Gerir Recursos{{/if}}
+			{{#if mostrarRecursos}}
+				{{localize "op.hideResources"}}
+			{{else}}
+				{{localize "op.manageResources"}}
+			{{/if}}
 		</a>
 	</div>
 	{{#if mostrarRecursos}}
@@ -18,7 +22,7 @@
 							type="text"
 							name="system.resources.res1.label"
 							value="{{system.resources.res1.label}}"
-							placeholder="Recurso 1"
+							placeholder="{{localize 'op.resource'}} 1"
 						/></label>
 					<div class="resource-inputs">
 						<input
@@ -110,15 +114,15 @@
 						{{#ifEquals type 5}}{{localize "op.abilitiesAbv.paranormal"}}{{/ifEquals}}
 						{{#ifEquals type 6}}{{localize "op.abilitiesAbv.ability"}}{{/ifEquals}}
 					</span>
-					<span class="col-cost">Custo</span>
-					<span class="col-exec">Execução</span>
+					<span class="col-cost">{{localize "op.cost"}}</span>
+					<span class="col-exec">{{localize "op.execution"}}</span>
 
 					<span class="col-controls">
 						{{#if @root.editable}}
 							<a
 								class="item-control item-create"
 								data-action="createDoc"
-								title="Criar Habilidade"
+								title="{{localize 'op.createAbility'}}"
 								data-document-class="Item"
 								data-type="ability"
 								data-id="{{type}}"
@@ -176,7 +180,7 @@
 		{{#if abilities.invalid}}
 			<div class="inventory-category invalid-category">
 				<div class="inventory-list-header alert-header">
-					<span class="col-name"><i class="fas fa-triangle-exclamation"></i> Outros Itens (Não Classificados)</span>
+					<span class="col-name"><i class="fas fa-triangle-exclamation"></i> {{localize "op.otherUnclassifiedItems"}}</span>
 				</div>
 				<ol class="inventory-items-list">
 					{{#each abilities.invalid as |item id|}}
