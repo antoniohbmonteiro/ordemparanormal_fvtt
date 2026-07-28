@@ -288,397 +288,439 @@ dialog.ordemparanormal.application {
 	text-transform: capitalize;
 }
 .system-ordemparanormal .threat {
-	/* --- CABEÇALHO PRINCIPAL --- */
-}
-.system-ordemparanormal .threat .header-identify {
-	display: flex;
-	align-items: center;
-	gap: 12px;
-	flex-wrap: wrap;
-}
-.system-ordemparanormal .threat .header-identify .threat-profile-img {
-	flex: 0 0 85px;
-	height: 85px;
-	width: 85px;
-	object-fit: cover;
-	border: 1px solid #000;
-	border-radius: 5px;
-	cursor: pointer;
-}
-.system-ordemparanormal .threat .header-identify .identity-info {
 	display: flex;
 	flex-direction: column;
-	flex: 1;
-	min-width: 200px;
-	gap: 6px;
+	/* ESPAÇAMENTO LATERAL: Descola o layout das bordas da janela do Foundry */
+	padding: 8px 12px 12px 12px;
+	/* Reset global */
 }
-.system-ordemparanormal .threat .header-identify .charname {
-	margin: 0;
-}
-.system-ordemparanormal .threat .header-identify .charname input {
-	font-family: "Libre Baskerville", serif;
-	text-align: center;
-	font-weight: 800;
-	font-size: 1.5rem;
-	width: 100%;
-	border: none;
-	background: transparent;
-	border-radius: 0;
-	height: 40px;
-}
-.system-ordemparanormal .threat .header-identify .charname input:focus {
-	border-bottom-color: 1px solid #272727;
-}
-.system-ordemparanormal .threat .header-stats-row {
-	display: flex;
-	gap: 8px;
-	align-items: stretch;
-	flex-wrap: wrap;
-}
-.system-ordemparanormal .threat .header-stats-row .vd-box {
-	background: rgba(0, 0, 0, 0.05);
-	border: 1px solid rgba(39, 39, 39, 0.25);
-	border-radius: 5px;
-	padding: 4px 6px;
-	flex: 0 0 55px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-.system-ordemparanormal .threat .header-stats-row .vd-box label {
-	font-weight: bold;
-	font-size: 11px;
-	color: #333;
-}
-.system-ordemparanormal .threat .header-stats-row .vd-box input {
-	width: 100%;
-	text-align: center;
-	font-size: 1.1rem;
-	font-weight: bold;
-	border: none;
-	background: transparent;
-	padding: 0;
-	height: 22px;
-}
-.system-ordemparanormal .threat .header-stats-row .disturbing-presence {
-	background: rgba(0, 0, 0, 0.05);
-	border: 1px solid rgba(39, 39, 39, 0.25);
-	border-radius: 5px;
-	flex: 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 12px;
-	padding: 4px 10px;
-	flex-wrap: wrap;
-}
-.system-ordemparanormal .threat .header-stats-row .disturbing-presence .section-title {
-	font-weight: bold;
-	font-size: 13px;
-	color: #333;
-}
-.system-ordemparanormal .threat .header-stats-row .disturbing-presence .presence-stat {
-	display: flex;
-	align-items: center;
-	gap: 5px;
-}
-.system-ordemparanormal .threat .header-stats-row .disturbing-presence .presence-stat label {
-	font-size: 11px;
-	font-weight: bold;
-	color: #555;
-}
-.system-ordemparanormal .threat .header-stats-row .disturbing-presence .presence-stat input {
-	height: 22px;
+.system-ordemparanormal .threat input,
+.system-ordemparanormal .threat select {
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 2px;
+	height: 20px;
+	padding: 0 4px;
 	font-size: 12px;
-	text-align: center;
-	background: rgba(255, 255, 255, 0.7);
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	border-radius: 3px;
 }
-.system-ordemparanormal .threat .header-stats-row .disturbing-presence .presence-stat input[name*="dt"] {
-	width: 40px;
-}
-.system-ordemparanormal .threat .header-stats-row .disturbing-presence .presence-stat input[name*="mentalDamage"] {
-	width: 75px;
-}
-.system-ordemparanormal .threat .header-stats-row .disturbing-presence .presence-stat i {
-	color: #151515;
-	font-size: 15px;
-}
-.system-ordemparanormal .threat {
-	/* --- AGRUPAMENTOS FLEX & GRID --- */
-}
-.system-ordemparanormal .threat .header-fields {
-	margin-top: 6px;
-}
-.system-ordemparanormal .threat {
-	/* --- CABEÇALHO COMBATE (hp-box, defense-box, etc) --- */
-}
-.system-ordemparanormal .threat .combat-stats-row {
-	display: flex;
-	gap: 8px;
-	margin: 6px 0;
-	flex-wrap: wrap;
-}
-.system-ordemparanormal .threat .combat-stats-row .resource {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	flex: 1;
-	min-width: 90px;
-	background: rgba(0, 0, 0, 0.02);
+.system-ordemparanormal .threat .resource {
+	background: rgba(0, 0, 0, 0.03);
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 4px;
+	border-radius: 3px;
 	padding: 4px;
+	text-align: center;
 }
-.system-ordemparanormal .threat .combat-stats-row .resource .resource-label {
+.system-ordemparanormal .threat .resource .resource-label {
+	font-weight: bold;
+	font-size: 10px;
 	text-transform: uppercase;
-	font-size: 11px;
-	font-weight: bold;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	display: block;
 	margin-bottom: 4px;
-	width: 100%;
+}
+.system-ordemparanormal .threat .resource input {
 	text-align: center;
-}
-.system-ordemparanormal .threat .combat-stats-row .resource .resource-content {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.system-ordemparanormal .threat .combat-stats-row .resource input {
-	text-align: center;
-	border: none;
-	background: transparent;
-	width: 100%;
-	height: 22px;
-	font-size: 13px;
-}
-.system-ordemparanormal .threat .combat-stats-row .hp-box {
-	flex: 1.5;
-}
-.system-ordemparanormal .threat .combat-stats-row .hp-box .divider {
-	margin: 0 4px;
 	font-weight: bold;
-	color: #666;
-	font-size: 13px;
 }
 .system-ordemparanormal .threat {
-	/* --- CLASSIFICAÇÃO + ATRIBUTOS --- */
+	/* --- CABEÇALHO --- */
 }
-.system-ordemparanormal .threat .class-attr-row {
-	display: flex;
-	gap: 6px;
-	margin: 6px 0;
+.system-ordemparanormal .threat .threat-header {
+	flex: 0 0 auto;
+	gap: 10px;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.system-ordemparanormal .threat .threat-header .threat-profile-img {
+	flex: 0 0 75px;
+	height: 75px;
+	width: 75px;
+	object-fit: cover;
+	border: 1px solid 1px solid #272727;
+	border-radius: 4px;
+}
+.system-ordemparanormal .threat .threat-header .identity-info {
+	flex: 1;
+	justify-content: space-between;
+}
+.system-ordemparanormal .threat .threat-header .identity-info .name-row {
+	align-items: flex-end;
+	gap: 12px;
 	flex-wrap: nowrap;
 }
-.system-ordemparanormal .threat .class-attr-row .resource {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background: rgba(0, 0, 0, 0.02);
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 4px;
-	padding: 4px 2px;
-	min-width: 0;
+.system-ordemparanormal .threat .threat-header .identity-info .name-row .charname {
+	margin: 0;
+	flex: 1;
 }
-.system-ordemparanormal .threat .class-attr-row .resource .resource-label {
-	text-transform: uppercase;
-	font-size: 10px;
-	font-weight: bold;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	margin-bottom: 4px;
-	width: 100%;
-	text-align: center;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-.system-ordemparanormal .threat .class-attr-row .resource .resource-content {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-}
-.system-ordemparanormal .threat .class-attr-row .resource input,
-.system-ordemparanormal .threat .class-attr-row .resource select {
-	text-align: center;
+.system-ordemparanormal .threat .threat-header .identity-info .name-row .charname input {
+	font-family: "Libre Baskerville", serif;
+	font-weight: 800;
+	font-size: 2.2rem;
 	border: none;
+	border-bottom: 2px solid 1px solid #272727;
 	background: transparent;
-	width: 100%;
-	height: 22px;
-	font-size: 12px;
+	height: 38px;
+	border-radius: 0;
 	padding: 0;
 }
-.system-ordemparanormal .threat .class-attr-row .select-box {
-	flex: 1.5;
+.system-ordemparanormal .threat .threat-header .identity-info .name-row {
+	/* VD COM ESTILO PADRONIZADO (Sem fundo preto) */
 }
-.system-ordemparanormal .threat .class-attr-row .attr-box {
-	flex: 1;
-	background: rgba(0, 0, 0, 0.04);
+.system-ordemparanormal .threat .threat-header .identity-info .name-row .vd-box {
+	flex: 0 0 auto;
+	background: rgba(0, 0, 0, 0.03); /* Fundo sutil */
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	padding: 4px 8px;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 2px;
 }
-.system-ordemparanormal .threat .class-attr-row .attr-box input {
-	font-size: 1.1rem;
+.system-ordemparanormal .threat .threat-header .identity-info .name-row .vd-box label {
+	font-size: 12px;
 	font-weight: bold;
+	color: #333;
+	text-transform: uppercase;
+}
+.system-ordemparanormal .threat .threat-header .identity-info .name-row .vd-box input {
+	width: 40px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	background: rgba(255, 255, 255, 0.6);
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	color: inherit;
+	height: 22px;
+	padding: 0;
+}
+.system-ordemparanormal .threat .threat-header .identity-info .classification-row {
+	gap: 8px;
+	margin-top: 4px;
+}
+.system-ordemparanormal .threat .threat-header .identity-info .classification-row .class-box {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.system-ordemparanormal .threat .threat-header .identity-info .classification-row .class-box label {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #555;
+	margin-bottom: 1px;
+}
+.system-ordemparanormal .threat .threat-header .identity-info .classification-row .class-box select {
+	width: 100%;
+	height: 22px;
+	font-size: 11px;
 }
 .system-ordemparanormal .threat {
-	/* --- PERÍCIAS --- */
+	/* --- CORPO --- */
 }
-.system-ordemparanormal .threat .threat-skills-container {
+.system-ordemparanormal .threat .threat-body {
+	flex: 1;
+	/* DUAS COLUNAS CENTRAIS */
+}
+.system-ordemparanormal .threat .threat-body .central-columns {
+	gap: 10px;
+	align-items: flex-start;
+	/* COLUNA ESQUERDA */
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left {
+	flex: 1.2;
+	gap: 6px;
+	/* PRESENÇA PERTURBADORA */
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .danger-box {
+	padding: 6px;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .danger-box .danger-stats {
+	gap: 16px;
+	justify-content: center;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .danger-box .danger-stats .stat {
+	flex: 0 0 auto;
+	align-items: center;
+	gap: 4px;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .danger-box .danger-stats .stat label {
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #444;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .danger-box .danger-stats .stat label i {
+	color: #666;
+	margin-left: 2px;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .danger-box .danger-stats .stat input {
+	height: 22px;
+	background: rgba(255, 255, 255, 0.6);
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	font-size: 13px;
+}
+.system-ordemparanormal
+	.threat
+	.threat-body
+	.central-columns
+	.col-left
+	.danger-box
+	.danger-stats
+	.stat:nth-child(1)
+	input {
+	width: 45px;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .danger-box .danger-stats {
+	/* DT */
+}
+.system-ordemparanormal
+	.threat
+	.threat-body
+	.central-columns
+	.col-left
+	.danger-box
+	.danger-stats
+	.stat:nth-child(2)
+	input {
+	width: 65px;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .danger-box .danger-stats {
+	/* Dano */
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left {
+	/* VITAIS */
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals {
+	gap: 6px;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals .hp-box {
+	flex: 1.4;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals .defense-box {
+	flex: 0.8;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals .movement-box {
+	flex: 1;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals .hp-box .resource-content,
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals .defense-box .resource-content,
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals .movement-box .resource-content {
+	gap: 4px;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals .hp-box input,
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals .defense-box input,
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals .movement-box input {
+	height: 22px;
+	width: 100%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 0;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals .hp-box .divider,
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals .defense-box .divider,
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals .movement-box .divider {
+	font-size: 12px;
+	color: #666;
+	font-weight: bold;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .vitals .hp-box input {
+	font-size: 15px;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left {
+	/* ATRIBUTOS */
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .attributes-mini {
+	gap: 4px;
+	background: rgba(0, 0, 0, 0.015);
+	border: 1px dashed rgba(0, 0, 0, 0.15);
+	border-radius: 3px;
+	padding: 4px;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .attributes-mini .attr-box {
+	flex: 1;
+	background: transparent;
+	border: none;
+	padding: 1px;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-left .attributes-mini .attr-box .resource-label {
+	font-size: 10px;
+	color: #666;
+	border: none;
+	margin-bottom: 2px;
+	font-weight: bold;
+}
+.system-ordemparanormal
+	.threat
+	.threat-body
+	.central-columns
+	.col-left
+	.attributes-mini
+	.attr-box
+	.resource-content
+	input {
+	height: 20px;
+	font-size: 13px;
+	background: rgba(255, 255, 255, 0.4);
+	border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.system-ordemparanormal .threat .threat-body .central-columns {
+	/* COLUNA DIREITA (Perícias) */
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-right {
+	flex: 1;
+	border-left: 1px solid rgba(0, 0, 0, 0.08);
+	padding-left: 8px;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-right .threat-skills-container {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	gap: 4px 6px;
+}
+.system-ordemparanormal .threat .threat-body .central-columns .col-right .threat-skills-container .skill-box {
+	justify-content: space-between;
+	align-items: center;
+	padding: 3px 6px;
+	background: rgba(0, 0, 0, 0.02);
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	border-radius: 3px;
+}
+.system-ordemparanormal
+	.threat
+	.threat-body
+	.central-columns
+	.col-right
+	.threat-skills-container
+	.skill-box
+	.skill-label {
+	font-size: 11px;
+	margin: 0;
+	font-weight: bold;
+}
+.system-ordemparanormal
+	.threat
+	.threat-body
+	.central-columns
+	.col-right
+	.threat-skills-container
+	.skill-box
+	.skill-label
+	span {
+	font-size: 9px;
+	color: #777;
+	font-weight: normal;
+}
+.system-ordemparanormal
+	.threat
+	.threat-body
+	.central-columns
+	.col-right
+	.threat-skills-container
+	.skill-box
+	.free-skill-header {
+	gap: 4px;
+	align-items: center;
+	flex: 1;
+	margin-right: 6px;
+}
+.system-ordemparanormal
+	.threat
+	.threat-body
+	.central-columns
+	.col-right
+	.threat-skills-container
+	.skill-box
+	.free-skill-header
+	input {
+	width: 100%;
+	height: 18px;
+	font-size: 11px;
+	border: none;
+	border-bottom: 1px solid #aaa;
+	background: transparent;
+	padding: 0;
+}
+.system-ordemparanormal
+	.threat
+	.threat-body
+	.central-columns
+	.col-right
+	.threat-skills-container
+	.skill-box
+	.free-skill-header
+	i {
+	font-size: 10px;
+	color: #555;
+}
+.system-ordemparanormal
+	.threat
+	.threat-body
+	.central-columns
+	.col-right
+	.threat-skills-container
+	.skill-box
+	.item-space {
+	gap: 4px;
+	flex: 0 0 auto;
+}
+.system-ordemparanormal
+	.threat
+	.threat-body
+	.central-columns
+	.col-right
+	.threat-skills-container
+	.skill-box
+	.item-space
+	select {
+	width: 75px;
+	height: 20px;
+	font-size: 10px;
+	padding: 0 2px;
+}
+.system-ordemparanormal
+	.threat
+	.threat-body
+	.central-columns
+	.col-right
+	.threat-skills-container
+	.skill-box
+	.item-space
+	input {
+	width: 30px;
+	height: 20px;
+	font-size: 11px;
+}
+.system-ordemparanormal .threat .threat-body {
+	/* TAGS (Rodapé das colunas) */
+}
+.system-ordemparanormal .threat .threat-body .threat-tags {
 	gap: 6px;
 	margin-top: 8px;
 }
-.system-ordemparanormal .threat .threat-skills-container .skill-box {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background: rgba(0, 0, 0, 0.02);
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 4px;
-	padding: 4px;
-}
-.system-ordemparanormal .threat .threat-skills-container .skill-box .resource-label {
-	font-size: 11.5px;
-	margin-bottom: 4px;
-	text-align: center;
-	line-height: 1;
-}
-.system-ordemparanormal .threat .threat-skills-container .skill-box .resource-label span {
-	color: #666;
-	font-size: 9.5px;
-	font-weight: normal;
-}
-.system-ordemparanormal .threat .threat-skills-container .skill-box .free-skill-header {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 5px;
-	margin-bottom: 4px;
-}
-.system-ordemparanormal .threat .threat-skills-container .skill-box .free-skill-header input {
-	font-size: 11px;
-	height: 16px;
-	width: 70px;
-	text-align: center;
-	border: none;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-	background: transparent;
-	padding: 0;
-}
-.system-ordemparanormal .threat .threat-skills-container .skill-box .free-skill-header i {
-	font-size: 11px;
-}
-.system-ordemparanormal .threat .threat-skills-container .skill-box .skill-controls {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 6px;
-}
-.system-ordemparanormal .threat .threat-skills-container .skill-box .skill-controls input {
-	width: 32px;
-	text-align: center;
-	height: 18px;
-	font-size: 12px;
-}
-.system-ordemparanormal .threat .threat-skills-container .skill-box .skill-controls a i {
-	font-size: 11px;
-}
-.system-ordemparanormal .threat {
-	/* --- TAGS (Resistências e Características) --- */
-}
-.system-ordemparanormal .threat .threat-tags {
-	display: flex;
-	flex-direction: row;
-	align-items: start;
-	gap: 8px;
-	margin-top: 10px;
-}
-.system-ordemparanormal .threat .threat-tags .tags-box {
+.system-ordemparanormal .threat .threat-body .threat-tags .tags-box {
 	flex: 1;
-	min-width: 0;
-	background: rgba(0, 0, 0, 0.02);
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 4px;
 	padding: 4px;
 }
-.system-ordemparanormal .threat .threat-tags .tags-box .resource-label {
-	display: block;
-	text-align: center;
-	font-size: 11px;
-	font-weight: bold;
-	text-transform: uppercase;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.system-ordemparanormal .threat .threat-body .threat-tags .tags-box .config-header {
+	font-size: 10px;
 	margin-bottom: 4px;
-	padding-bottom: 2px;
 }
-.system-ordemparanormal .threat .threat-tags .config-header a {
-	text-decoration: none;
-	color: inherit;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 6px;
+.system-ordemparanormal .threat .threat-body .threat-tags .tags-box .config-header a i {
+	opacity: 0.6;
 }
-.system-ordemparanormal .threat .threat-tags .config-header a i.fa-cog {
-	font-size: 0.85em;
-	opacity: 0.4;
-	transition: 0.2s;
-}
-.system-ordemparanormal .threat .threat-tags .config-header a:hover i.fa-cog {
-	opacity: 1;
-}
-.system-ordemparanormal .threat .threat-tags .resistance-container-grid,
-.system-ordemparanormal .threat .threat-tags .traits-container-grid {
+.system-ordemparanormal .threat .threat-body .threat-tags .tags-box .tags-grid {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 5px;
-	padding: 2px;
-	align-items: center;
+	gap: 4px;
 	justify-content: center;
-	min-height: 24px;
 }
-.system-ordemparanormal .threat .threat-tags .resistance-tag,
-.system-ordemparanormal .threat .threat-tags .traits-tag {
-	flex: 1 0 auto;
-	min-width: 50px;
+.system-ordemparanormal .threat .threat-body .threat-tags .tags-box .tags-grid .threat-tag {
 	font-size: 10px;
-	border: 1px solid #7a7971;
 	padding: 2px 6px;
 	border-radius: 3px;
-	background: rgba(0, 0, 0, 0.05);
-	white-space: nowrap;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
 	gap: 4px;
-}
-.system-ordemparanormal .threat .threat-tags .resistance-tag-label,
-.system-ordemparanormal .threat .threat-tags .traits-tag-label {
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 10px;
-}
-.system-ordemparanormal .threat .threat-tags .resistance-tag-values {
-	display: flex;
-	gap: 3px;
-	align-items: center;
-	justify-content: center;
-}
-.system-ordemparanormal .threat .threat-tags .resistance-tag-value {
-	font-size: 11px;
-	font-weight: bold;
-}
-.system-ordemparanormal .threat .threat-tags .resistance-tag-immune {
-	color: #2c3e50;
-	font-size: 10px;
-}
-.system-ordemparanormal .threat .threat-tags .resistance-tag-vulnerable {
-	color: #c0392b;
-	font-size: 10px;
+	background: rgba(0, 0, 0, 0.06);
+	border: 1px solid rgba(0, 0, 0, 0.15);
 }
 .system-ordemparanormal {
 	@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&Roboto:wght@400;700&display=swap");

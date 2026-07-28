@@ -3,432 +3,362 @@
 @use "../utils/variables";
 
 .threat {
-	/* --- CABEÇALHO PRINCIPAL --- */
-	.header-identify {
-		display: flex;
-		align-items: center;
-		gap: 12px;
-		flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	/* ESPAÇAMENTO LATERAL: Descola o layout das bordas da janela do Foundry */
+	padding: 8px 12px 12px 12px;
+
+	/* Reset global */
+	input,
+	select {
+		border: 1px solid rgba(0, 0, 0, 0.15);
+		background: rgba(255, 255, 255, 0.5);
+		border-radius: 2px;
+		height: 20px;
+		padding: 0 4px;
+		font-size: 12px;
+	}
+
+	.resource {
+		background: rgba(0, 0, 0, 0.03);
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 3px;
+		padding: 4px;
+		text-align: center;
+
+		.resource-label {
+			font-weight: bold;
+			font-size: 10px;
+			text-transform: uppercase;
+			display: block;
+			margin-bottom: 4px;
+		}
+		input {
+			text-align: center;
+			font-weight: bold;
+		}
+	}
+
+	/* --- CABEÇALHO --- */
+	.threat-header {
+		flex: 0 0 auto;
+		gap: 10px;
+		padding-bottom: 8px;
+		margin-bottom: 8px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
 		.threat-profile-img {
-			flex: 0 0 85px;
-			height: 85px;
-			width: 85px;
+			flex: 0 0 75px;
+			height: 75px;
+			width: 75px;
 			object-fit: cover;
-			border: 1px solid #000;
-			border-radius: 5px;
-			cursor: pointer;
+			border: 1px solid variables.$border-dark;
+			border-radius: 4px;
 		}
 
 		.identity-info {
-			display: flex;
-			flex-direction: column;
 			flex: 1;
-			min-width: 200px;
-			gap: 6px;
-		}
+			justify-content: space-between;
 
-		.charname {
-			margin: 0;
-			input {
-				font-family: typography.$font-secondary;
-				text-align: center;
-				font-weight: 800;
-				font-size: 1.5rem;
-				width: 100%;
-				border: none;
-				background: transparent;
-				border-radius: 0;
-				height: 40px;
+			.name-row {
+				align-items: flex-end;
+				gap: 12px;
+				flex-wrap: nowrap;
 
-				&:focus {
-					border-bottom-color: variables.$border-dark;
-				}
-			}
-		}
-	}
-
-	.header-stats-row {
-		display: flex;
-		gap: 8px;
-		align-items: stretch;
-		flex-wrap: wrap;
-
-		.vd-box {
-			background: rgba(0, 0, 0, 0.05);
-			border: 1px solid variables.$border-transparent-medium;
-			border-radius: 5px;
-			padding: 4px 6px;
-			flex: 0 0 55px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-
-			label {
-				font-weight: bold;
-				font-size: 11px;
-				color: #333;
-			}
-
-			input {
-				width: 100%;
-				text-align: center;
-				font-size: 1.1rem;
-				font-weight: bold;
-				border: none;
-				background: transparent;
-				padding: 0;
-				height: 22px;
-			}
-		}
-
-		.disturbing-presence {
-			background: rgba(0, 0, 0, 0.05);
-			border: 1px solid variables.$border-transparent-medium;
-			border-radius: 5px;
-			flex: 1;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 12px;
-			padding: 4px 10px;
-			flex-wrap: wrap;
-
-			.section-title {
-				font-weight: bold;
-				font-size: 13px;
-				color: #333;
-			}
-
-			.presence-stat {
-				display: flex;
-				align-items: center;
-				gap: 5px;
-
-				label {
-					font-size: 11px;
-					font-weight: bold;
-					color: #555;
+				.charname {
+					margin: 0;
+					flex: 1;
+					input {
+						font-family: typography.$font-secondary;
+						font-weight: 800;
+						font-size: 2.2rem;
+						border: none;
+						border-bottom: 2px solid variables.$border-dark;
+						background: transparent;
+						height: 38px;
+						border-radius: 0;
+						padding: 0;
+					}
 				}
 
-				input {
-					height: 22px;
-					font-size: 12px;
-					text-align: center;
-					background: rgba(255, 255, 255, 0.7);
-					border: 1px solid rgba(0, 0, 0, 0.2);
+				/* VD COM ESTILO PADRONIZADO (Sem fundo preto) */
+				.vd-box {
+					flex: 0 0 auto;
+					background: rgba(0, 0, 0, 0.03); /* Fundo sutil */
+					border: 1px solid rgba(0, 0, 0, 0.1);
 					border-radius: 3px;
+					padding: 4px 8px;
+					align-items: center;
+					gap: 8px;
+					margin-bottom: 2px;
 
-					&[name*="dt"] {
+					label {
+						font-size: 12px;
+						font-weight: bold;
+						color: #333;
+						text-transform: uppercase;
+					}
+					input {
 						width: 40px;
+						text-align: center;
+						font-size: 14px;
+						font-weight: bold;
+						background: rgba(255, 255, 255, 0.6);
+						border: 1px solid rgba(0, 0, 0, 0.15);
+						color: inherit;
+						height: 22px;
+						padding: 0;
 					}
-					&[name*="mentalDamage"] {
-						width: 75px;
+				}
+			}
+
+			.classification-row {
+				gap: 8px;
+				margin-top: 4px;
+				.class-box {
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					label {
+						font-size: 10px;
+						text-transform: uppercase;
+						font-weight: bold;
+						color: #555;
+						margin-bottom: 1px;
+					}
+					select {
+						width: 100%;
+						height: 22px;
+						font-size: 11px;
 					}
 				}
-
-				i {
-					color: colors.$gray;
-					font-size: 15px;
-				}
 			}
 		}
 	}
 
-	/* --- AGRUPAMENTOS FLEX & GRID --- */
-	.header-fields {
-		margin-top: 6px;
-	}
+	/* --- CORPO --- */
+	.threat-body {
+		flex: 1;
 
-	/* --- CABEÇALHO COMBATE (hp-box, defense-box, etc) --- */
-	.combat-stats-row {
-		display: flex;
-		gap: 8px;
-		margin: 6px 0;
-		flex-wrap: wrap;
+		/* DUAS COLUNAS CENTRAIS */
+		.central-columns {
+			gap: 10px;
+			align-items: flex-start;
 
-		.resource {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			flex: 1;
-			min-width: 90px;
-			background: rgba(0, 0, 0, 0.02);
-			border: 1px solid rgba(0, 0, 0, 0.1);
-			border-radius: 4px;
-			padding: 4px;
-
-			.resource-label {
-				text-transform: uppercase;
-				font-size: 11px;
-				font-weight: bold;
-				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-				margin-bottom: 4px;
-				width: 100%;
-				text-align: center;
-			}
-
-			.resource-content {
-				width: 100%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-			input {
-				text-align: center;
-				border: none;
-				background: transparent;
-				width: 100%;
-				height: 22px;
-				font-size: 13px;
-			}
-		}
-		.hp-box {
-			flex: 1.5;
-			.divider {
-				margin: 0 4px;
-				font-weight: bold;
-				color: #666;
-				font-size: 13px;
-			}
-		}
-	}
-
-	/* --- CLASSIFICAÇÃO + ATRIBUTOS --- */
-	.class-attr-row {
-		display: flex;
-		gap: 6px;
-		margin: 6px 0;
-		flex-wrap: nowrap;
-
-		.resource {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			background: rgba(0, 0, 0, 0.02);
-			border: 1px solid rgba(0, 0, 0, 0.1);
-			border-radius: 4px;
-			padding: 4px 2px;
-			min-width: 0;
-
-			.resource-label {
-				text-transform: uppercase;
-				font-size: 10px;
-				font-weight: bold;
-				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-				margin-bottom: 4px;
-				width: 100%;
-				text-align: center;
-				white-space: nowrap;
-				overflow: hidden;
-				text-overflow: ellipsis;
-			}
-
-			.resource-content {
-				width: 100%;
-				display: flex;
-				justify-content: center;
-			}
-
-			input,
-			select {
-				text-align: center;
-				border: none;
-				background: transparent;
-				width: 100%;
-				height: 22px;
-				font-size: 12px;
-				padding: 0;
-			}
-		}
-
-		.select-box {
-			flex: 1.5;
-		}
-
-		.attr-box {
-			flex: 1;
-			background: rgba(0, 0, 0, 0.04);
-
-			input {
-				font-size: 1.1rem;
-				font-weight: bold;
-			}
-		}
-	}
-
-	/* --- PERÍCIAS --- */
-	.threat-skills-container {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 6px;
-		margin-top: 8px;
-
-		.skill-box {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			background: rgba(0, 0, 0, 0.02);
-			border: 1px solid rgba(0, 0, 0, 0.1);
-			border-radius: 4px;
-			padding: 4px;
-
-			.resource-label {
-				font-size: 11.5px;
-				margin-bottom: 4px;
-				text-align: center;
-				line-height: 1;
-				span {
-					color: #666;
-					font-size: 9.5px;
-					font-weight: normal;
-				}
-			}
-
-			.free-skill-header {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				gap: 5px;
-				margin-bottom: 4px;
-
-				input {
-					font-size: 11px;
-					height: 16px;
-					width: 70px;
-					text-align: center;
-					border: none;
-					border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-					background: transparent;
-					padding: 0;
-				}
-				i {
-					font-size: 11px;
-				}
-			}
-
-			.skill-controls {
-				display: flex;
-				align-items: center;
-				justify-content: center;
+			/* COLUNA ESQUERDA */
+			.col-left {
+				flex: 1.2;
 				gap: 6px;
-				input {
-					width: 32px;
-					text-align: center;
-					height: 18px;
-					font-size: 12px;
+
+				/* PRESENÇA PERTURBADORA */
+				.danger-box {
+					padding: 6px;
+
+					.danger-stats {
+						gap: 16px;
+						justify-content: center;
+
+						.stat {
+							flex: 0 0 auto;
+							align-items: center;
+							gap: 4px;
+
+							label {
+								font-size: 10px;
+								font-weight: bold;
+								text-transform: uppercase;
+								color: #444;
+								i {
+									color: #666;
+									margin-left: 2px;
+								}
+							}
+							input {
+								height: 22px;
+								background: rgba(255, 255, 255, 0.6);
+								border: 1px solid rgba(0, 0, 0, 0.15);
+								font-size: 13px;
+							}
+						}
+						.stat:nth-child(1) input {
+							width: 45px;
+						} /* DT */
+						.stat:nth-child(2) input {
+							width: 65px;
+						} /* Dano */
+					}
 				}
-				a i {
-					font-size: 11px;
+
+				/* VITAIS */
+				.vitals {
+					gap: 6px;
+
+					.hp-box {
+						flex: 1.4;
+					}
+					.defense-box {
+						flex: 0.8;
+					}
+					.movement-box {
+						flex: 1;
+					}
+
+					.hp-box,
+					.defense-box,
+					.movement-box {
+						.resource-content {
+							gap: 4px;
+						}
+						input {
+							height: 22px;
+							width: 100%;
+							background: transparent;
+							border: none;
+							border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+							border-radius: 0;
+						}
+						.divider {
+							font-size: 12px;
+							color: #666;
+							font-weight: bold;
+						}
+					}
+					.hp-box input {
+						font-size: 15px;
+					}
+				}
+
+				/* ATRIBUTOS */
+				.attributes-mini {
+					gap: 4px;
+					background: rgba(0, 0, 0, 0.015);
+					border: 1px dashed rgba(0, 0, 0, 0.15);
+					border-radius: 3px;
+					padding: 4px;
+
+					.attr-box {
+						flex: 1;
+						background: transparent;
+						border: none;
+						padding: 1px;
+
+						.resource-label {
+							font-size: 10px;
+							color: #666;
+							border: none;
+							margin-bottom: 2px;
+							font-weight: bold;
+						}
+						.resource-content input {
+							height: 20px;
+							font-size: 13px;
+							background: rgba(255, 255, 255, 0.4);
+							border: 1px solid rgba(0, 0, 0, 0.05);
+						}
+					}
+				}
+			}
+
+			/* COLUNA DIREITA (Perícias) */
+			.col-right {
+				flex: 1;
+				border-left: 1px solid rgba(0, 0, 0, 0.08);
+				padding-left: 8px;
+
+				.threat-skills-container {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					gap: 4px 6px;
+
+					.skill-box {
+						justify-content: space-between;
+						align-items: center;
+						padding: 3px 6px;
+						background: rgba(0, 0, 0, 0.02);
+						border: 1px solid rgba(0, 0, 0, 0.05);
+						border-radius: 3px;
+
+						.skill-label {
+							font-size: 11px;
+							margin: 0;
+							font-weight: bold;
+							span {
+								font-size: 9px;
+								color: #777;
+								font-weight: normal;
+							}
+						}
+
+						.free-skill-header {
+							gap: 4px;
+							align-items: center;
+							flex: 1;
+							margin-right: 6px;
+							input {
+								width: 100%;
+								height: 18px;
+								font-size: 11px;
+								border: none;
+								border-bottom: 1px solid #aaa;
+								background: transparent;
+								padding: 0;
+							}
+							i {
+								font-size: 10px;
+								color: #555;
+							}
+						}
+
+						.item-space {
+							gap: 4px;
+							flex: 0 0 auto;
+							select {
+								width: 75px;
+								height: 20px;
+								font-size: 10px;
+								padding: 0 2px;
+							}
+							input {
+								width: 30px;
+								height: 20px;
+								font-size: 11px;
+							}
+						}
+					}
 				}
 			}
 		}
-	}
 
-	/* --- TAGS (Resistências e Características) --- */
-	.threat-tags {
-		display: flex;
-		flex-direction: row;
-		align-items: start;
-		gap: 8px;
-		margin-top: 10px;
-
-		.tags-box {
-			flex: 1;
-			min-width: 0;
-			background: rgba(0, 0, 0, 0.02);
-			border: 1px solid rgba(0, 0, 0, 0.1);
-			border-radius: 4px;
-			padding: 4px;
-
-			.resource-label {
-				display: block;
-				text-align: center;
-				font-size: 11px;
-				font-weight: bold;
-				text-transform: uppercase;
-				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-				margin-bottom: 4px;
-				padding-bottom: 2px;
-			}
-		}
-
-		.config-header a {
-			text-decoration: none;
-			color: inherit;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+		/* TAGS (Rodapé das colunas) */
+		.threat-tags {
 			gap: 6px;
+			margin-top: 8px;
 
-			i.fa-cog {
-				font-size: 0.85em;
-				opacity: 0.4;
-				transition: 0.2s;
+			.tags-box {
+				flex: 1;
+				padding: 4px;
+				.config-header {
+					font-size: 10px;
+					margin-bottom: 4px;
+					a i {
+						opacity: 0.6;
+					}
+				}
+				.tags-grid {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 4px;
+					justify-content: center;
+					.threat-tag {
+						font-size: 10px;
+						padding: 2px 6px;
+						border-radius: 3px;
+						gap: 4px;
+						background: rgba(0, 0, 0, 0.06);
+						border: 1px solid rgba(0, 0, 0, 0.15);
+					}
+				}
 			}
-
-			&:hover i.fa-cog {
-				opacity: 1;
-			}
-		}
-
-		.resistance-container-grid,
-		.traits-container-grid {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 5px;
-			padding: 2px;
-			align-items: center;
-			justify-content: center;
-			min-height: 24px;
-		}
-
-		.resistance-tag,
-		.traits-tag {
-			flex: 1 0 auto;
-			min-width: 50px;
-			font-size: 10px;
-			border: 1px solid #7a7971;
-			padding: 2px 6px;
-			border-radius: 3px;
-			background: rgba(0, 0, 0, 0.05);
-			white-space: nowrap;
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			gap: 4px;
-		}
-
-		.resistance-tag-label,
-		.traits-tag-label {
-			font-weight: bold;
-			text-transform: uppercase;
-			font-size: 10px;
-		}
-
-		.resistance-tag-values {
-			display: flex;
-			gap: 3px;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.resistance-tag-value {
-			font-size: 11px;
-			font-weight: bold;
-		}
-
-		.resistance-tag-immune {
-			color: #2c3e50;
-			font-size: 10px;
-		}
-
-		.resistance-tag-vulnerable {
-			color: #c0392b;
-			font-size: 10px;
 		}
 	}
 }
