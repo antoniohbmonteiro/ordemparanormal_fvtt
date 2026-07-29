@@ -476,7 +476,7 @@ op.CompendiumEntries = {
 	technology: "Compendium.ordemparanormal.bookrules.JournalEntry.wlBeWbK9TfrlufWA.JournalEntryPage.DSLIxmTFfyoNtO5s",
 	will: "Compendium.ordemparanormal.bookrules.JournalEntry.wlBeWbK9TfrlufWA.JournalEntryPage.xt8G3szvcjfUn55D",
 	freeSkill: "Compendium.ordemparanormal.bookrules.JournalEntry.wlBeWbK9TfrlufWA.JournalEntryPage.qTwpNeH48xyzrz1w",
-	origin: "Compendium.ordemparanormal.origins",
-	class: "Compendium.ordemparanormal.classes",
-	path: "Compendium.ordemparanormal.paths",
+	origin: "ordemparanormal.origins",
+	class: "ordemparanormal.classes",
+	path: "ordemparanormal.paths",
 };
