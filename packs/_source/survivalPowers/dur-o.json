@@ -5,12 +5,13 @@
   "img": "systems/ordemparanormal/media/icons/abilities/class/survivor/durao.svg",
   "system": {
     "id": 0,
-    "abilityType": "",
+    "abilityType": "class",
     "preRequisite": "",
     "description": "<p>Você recebe +4 PV. Quando subir para o 3º estágio, recebe +2 PV.</p>",
+    "chatDescription": "",
+    "activation": "passive",
     "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "folder": null,
@@ -24,12 +25,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1768024745767,
-    "modifiedTime": 1768025236607,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785353840880,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "_key": "!items!YJGs8aWNCN8rg2G6"
 }

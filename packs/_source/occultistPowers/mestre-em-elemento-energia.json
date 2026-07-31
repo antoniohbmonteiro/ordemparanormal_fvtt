@@ -6,10 +6,11 @@
     "id": 0,
     "abilityType": "class",
     "preRequisite": "Especialista em <Elemento> & NEX 45%",
-    "description": "<p>Escolha um elemento. O custo para lan&ccedil;ar rituais desse elemento dimi\u0002nui em &ndash;1 PE.</p>",
+    "description": "<p>Escolha um elemento. O custo para lançar rituais desse elemento diminui em –1 PE.</p>",
+    "chatDescription": "",
+    "activation": "passive",
     "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -17,12 +18,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1768012562479,
-    "modifiedTime": 1768012562479,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785353454638,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

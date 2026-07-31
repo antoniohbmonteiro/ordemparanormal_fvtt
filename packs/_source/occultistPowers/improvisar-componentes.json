@@ -6,10 +6,11 @@
     "id": 0,
     "abilityType": "class",
     "preRequisite": "",
-    "description": "<p>Uma vez por cena, voc&ecirc; pode gastar uma a&ccedil;&atilde;o completa para fazer um teste de Investiga&ccedil;&atilde;o (DT 15). Se passar, encontra objetos que podem servir como componentes ri\u0002tual&iacute;sticos de um elemento &agrave; sua escolha. O mestre define se &eacute; poss&iacute;vel usar esse poder na cena atual.</p>",
+    "description": "<p>Uma vez por cena, você pode gastar uma ação completa para fazer um teste de Investigação (DT 15). Se passar, encontra objetos que podem servir como componentes ritualísticos de um elemento à sua escolha. O mestre define se é possível usar esse poder na cena atual.</p>",
+    "chatDescription": "",
+    "activation": "complete",
     "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -17,12 +18,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1768012562479,
-    "modifiedTime": 1768012562479,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785353479424,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

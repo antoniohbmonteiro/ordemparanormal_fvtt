@@ -5,12 +5,13 @@
   "img": "systems/ordemparanormal/media/icons/abilities/class/survivor/empenho.svg",
   "system": {
     "id": 0,
-    "abilityType": "",
+    "abilityType": "class",
     "preRequisite": "",
     "description": "<p>Você pode não ter treinamento especial, mas compensa com dedicação e esforço. Quando faz um teste de perícia, você pode gastar 1 PE para receber +2 nesse teste.</p>",
-    "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "chatDescription": "",
+    "activation": "reaction",
+    "cost": 1,
+    "costType": "PE"
   },
   "effects": [],
   "folder": null,
@@ -24,12 +25,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1768024661675,
-    "modifiedTime": 1768025243705,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785353833146,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "_key": "!items!EU24cq2csWa0ryEj"
 }
