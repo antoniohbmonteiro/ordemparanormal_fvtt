@@ -7,10 +7,11 @@
     "id": 0,
     "abilityType": "path",
     "preRequisite": "",
-    "description": "<p>Voc&ecirc; pode direcionar aliados em alcance curto. Gaste uma a&ccedil;&atilde;o padr&atilde;o e 1 PE por aliado que quiser direcionar (limitado pelo seu Intelecto). No pr&oacute;ximo turno dos aliados afeta\u0002dos, eles ganham uma a&ccedil;&atilde;o de movimento adicional.</p>",
-    "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "description": "<p>Você pode direcionar aliados em alcance curto. Gaste uma ação padrão e 1 PE por aliado que quiser direcionar (limitado pelo seu Intelecto). No próximo turno dos aliados afetados, eles ganham uma ação de movimento adicional.</p>",
+    "chatDescription": "",
+    "activation": "default",
+    "cost": 1,
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391179358,
-    "modifiedTime": 1767391179358,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785354596562,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

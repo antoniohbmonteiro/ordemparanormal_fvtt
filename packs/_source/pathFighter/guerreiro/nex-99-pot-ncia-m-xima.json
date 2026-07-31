@@ -8,9 +8,10 @@
     "abilityType": "path",
     "preRequisite": "",
     "description": "<p>Quando usa seu Ataque Especial com armas corpo a corpo, todos os b&ocirc;nus num&eacute;ricos s&atilde;o dobrados. Por exemplo, se usar 5 PE para receber +5 no ataque e +15 no dano, voc&ecirc; recebe +10 no ataque e +30 no dano.</p>",
+    "chatDescription": "",
+    "activation": "passive",
     "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391179358,
-    "modifiedTime": 1767391179358,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785354677498,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,
