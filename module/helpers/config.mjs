@@ -323,6 +323,7 @@ op.ritualDegree = { 5: "Outro", 1: "1", 2: "2", 3: "3", 4: "4" };
  * @type {Object}
  */
 op.dropdownExecution = {
+	passive: "op.executionChoices.passive",
 	free: "op.executionChoices.free",
 	movement: "op.executionChoices.movement",
 	default: "op.executionChoices.default",
