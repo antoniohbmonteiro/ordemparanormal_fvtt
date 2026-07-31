@@ -7,10 +7,11 @@
     "id": 0,
     "abilityType": "path",
     "preRequisite": "",
-    "description": "<p>Quando faz um teste de Furtividade ap&oacute;s atacar ou fazer outra a&ccedil;&atilde;o chamativa, voc&ecirc; pode gastar 3 PE para n&atilde;o sofrer a penalidade de &ndash;15 no teste.</p>",
+    "description": "<p>Quando faz um teste de Furtividade após atacar ou fazer outra ação chamativa, você pode gastar 3 PE para não sofrer a penalidade de @DisplayDice[qtd:3|sign:minus|dc:d20] no teste.</p>",
+    "chatDescription": "",
+    "activation": "",
     "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391187608,
-    "modifiedTime": 1767391187608,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785524264965,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

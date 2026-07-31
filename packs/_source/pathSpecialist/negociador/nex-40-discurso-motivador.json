@@ -7,10 +7,11 @@
     "id": 0,
     "abilityType": "path",
     "preRequisite": "",
-    "description": "<p>Voc&ecirc; pode gas\u0002tar uma a&ccedil;&atilde;o padr&atilde;o e 4 PE para inspirar seus aliados com suas palavras. Voc&ecirc; e todos os seus aliados em alcance curto ganham @DisplayDice[qtd:1|sign:plus|dc:d20] em testes de per&iacute;cia at&eacute; o fim da cena. A partir de NEX 65%, voc&ecirc; pode gastar 8 PE para fornecer um b&ocirc;nus total de @DisplayDice[qtd:2|sign:plus|dc:d20].</p>",
-    "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "description": "<p>Você pode gastar uma ação padrão e 4 PE para inspirar seus aliados com suas palavras. Você e todos os seus aliados em alcance curto ganham @DisplayDice[qtd:1|sign:plus|dc:d20] em testes de perícia até o fim da cena. A partir de NEX 65%, você pode gastar 8 PE para fornecer um bônus total de @DisplayDice[qtd:2|sign:plus|dc:d20].</p>",
+    "chatDescription": "",
+    "activation": "default",
+    "cost": 4,
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391187608,
-    "modifiedTime": 1767391187608,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785525576341,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

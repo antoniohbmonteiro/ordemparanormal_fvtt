@@ -7,9 +7,10 @@
     "abilityType": "path",
     "preRequisite": "Trilha: Possuído",
     "description": "<p>Desabrochando em seu interior, o paranormal se manifesta como uma dádiva poderosa. Baseado no elemento com que tem afinidade, você recebe um dos poderes a seguir.</p><p>Uma vez por cena, você pode gastar <strong>6 PE</strong> para reescrever uma fração de seu próprio ser. Você recebe um poder qualquer até o fim da cena. Você deve cumprir os pré-requisitos do poder escolhido, e não pode escolher poderes de trilha de NEX 99%. A cada vez que usa este poder, você deve fazer um <strong>teste de Vontade (DT 15 + 5 para cada vez que usou este poder na mesma missão)</strong>. Se falhar, perde <strong>1d6 pontos de Sanidade</strong> para cada vez que usou esse poder nesta missão.</p>",
-    "cost": "5",
-    "costType": "PE",
-    "activation": ""
+    "chatDescription": "",
+    "activation": "free",
+    "cost": 6,
+    "costType": "PE"
   },
   "effects": [],
   "folder": "uIhZEFesJyaSYIJU",
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767395917296,
-    "modifiedTime": 1767399877546,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785527314650,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

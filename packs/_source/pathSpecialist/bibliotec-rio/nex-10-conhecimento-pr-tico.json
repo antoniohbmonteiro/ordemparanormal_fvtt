@@ -7,9 +7,10 @@
     "abilityType": "path",
     "preRequisite": "Trilha: Bibliotecário",
     "description": "<p>Você pode se lembrar de muitas informações úteis de suas leituras. Quando faz um teste de perícia (exceto Luta e Pontaria), você pode gastar <strong>2 PE</strong> para mudar o atributo-base da perícia para <strong>Intelecto</strong>. Se possuir o poder <strong>Conhecimento Aplicado</strong>, em vez disso seu custo é reduzido em <strong>–1 PE</strong>.</p>",
+    "chatDescription": "",
+    "activation": "free",
     "cost": "2",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "folder": "diewwdueVbtezoUg",
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391187608,
-    "modifiedTime": 1767400845677,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785524077242,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,
