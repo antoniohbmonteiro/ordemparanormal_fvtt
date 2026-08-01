@@ -289,6 +289,11 @@ export class OrdemThreatSheet extends api.HandlebarsApplicationMixin(sheets.Acto
 			// Enrichment turns text like `[[/r 1d20]]` into buttons
 			case "attacks":
 				context.tab = context.tabs[partId];
+				// When rendering the attacks part, decide whether to use the
+				// specialized threat handlers (createThreatAttack / editThreatAttack)
+				// or the generic item handlers (createDoc / viewDoc). For threat
+				// actor types we prefer the specialized handlers.
+				context.useThreatHandlers = this.document.type === "threat";
 				break;
 			case "enigmas":
 				context.tab = context.tabs[partId];
@@ -707,7 +712,17 @@ export class OrdemThreatSheet extends api.HandlebarsApplicationMixin(sheets.Acto
 			},
 		});
 		if (!result || !result.name) return;
-		await this.actor.createEmbeddedDocuments("Item", [OrdemThreatSheet.#attackFormDataToItem(result)]);
+		// Create the item and mark it with a flag so we know it came from the
+		// threat attack dialog. Store the flag on the Item's flags under our
+		// system namespace (flags.ordemparanormal.createdByThreatDialog = true)
+		const itemData = OrdemThreatSheet.#attackFormDataToItem(result);
+		const created = await this.actor.createEmbeddedDocuments("Item", [itemData]);
+		if (created?.length) {
+			const item = created[0];
+			await item.update({
+				"flags.ordemparanormal.createdByThreatDialog": true,
+			});
+		}
 	}
 
 	/** Open dialog to edit an existing threat attack item. */
