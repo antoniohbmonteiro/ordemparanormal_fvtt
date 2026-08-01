@@ -7,9 +7,10 @@
     "abilityType": "class",
     "preRequisite": "Agilidade 2",
     "description": "<p>Sabendo que nem toda batalha pode ser vencida, você desenvolveu um sexto sentido para prever quando é hora de fugir. Quando uma cena de perseguição (ou semelhante) tem início, você recebe +2 em todos os testes de perícia que fizer durante a cena. <em>Pré-requisito: treinado em Intuição.</em></p>",
+    "chatDescription": "",
+    "activation": "passive",
     "cost": "2",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -17,12 +18,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1768012548817,
-    "modifiedTime": 1768018967526,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785351836648,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

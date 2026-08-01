@@ -6,10 +6,11 @@
     "id": 0,
     "abilityType": "class",
     "preRequisite": "",
-    "description": "<p>Voc&ecirc; pode gastar uma a&ccedil;&atilde;o livre para esconder s&iacute;mbolos e sigilos que estejam desenhados ou gravados em objetos ou em sua pele, tornando-os invis&iacute;veis para ou\u0002tras pessoas al&eacute;m de voc&ecirc; mesmo. Al&eacute;m disso, quando lan&ccedil;a um ritual, pode gastar +2 PE para lan&ccedil;&aacute;-lo sem usar componentes ritual&iacute;sticos e sem gesticular (o que permite conjurar um ritual com as m&atilde;os presas), usando apenas concentra\u0002&ccedil;&atilde;o. Outros seres s&oacute; perceber&atilde;o que voc&ecirc; lan&ccedil;ou uma ritual se passarem num teste de Ocultismo (DT 25).</p>",
+    "description": "<p>Você pode gastar uma ação livre para esconder símbolos e sigilos que estejam desenhados ou gravados em objetos ou em sua pele, tornando-os invisíveis para outras pessoas além de você mesmo. Além disso, quando lança um ritual, pode gastar +2 PE para lançá-lo sem usar componentes ritualísticos e sem gesticular (o que permite conjurar um ritual com as mãos presas), usando apenas concentração. Outros seres só perceberão que você lançou uma ritual se passarem num teste de Ocultismo (DT 25).</p>",
+    "chatDescription": "",
+    "activation": "reaction",
     "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -17,12 +18,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1768012562479,
-    "modifiedTime": 1768012562479,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785353694806,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

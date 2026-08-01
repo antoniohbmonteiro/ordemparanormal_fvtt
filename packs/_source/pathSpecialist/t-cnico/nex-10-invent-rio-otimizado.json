@@ -8,9 +8,10 @@
     "abilityType": "path",
     "preRequisite": "",
     "description": "<p>Voc&ecirc; soma seu Intelecto &agrave; sua For&ccedil;a para calcular sua capacidade de carga. Por exemplo, se voc&ecirc; tem For&ccedil;a 1 e Intelecto 3, seu invent&aacute;rio tem 20 espa&ccedil;os.</p>",
+    "chatDescription": "",
+    "activation": "passive",
     "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391187608,
-    "modifiedTime": 1767391187608,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785526403122,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

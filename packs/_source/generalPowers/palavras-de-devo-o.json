@@ -7,9 +7,10 @@
     "abilityType": "general",
     "preRequisite": "Presença 2",
     "description": "<p>Você combina uma fé verdadeira com o conhecimento dos ritos e tradições de sua religião. Você recebe treinamento em Religião ou, se já for treinado nesta perícia, recebe +2 nela. Além disso, uma vez por cena, pode gastar 3 PE e uma ação completa para executar uma oração para um número de pessoas até o dobro de sua Presença. Até o fim da cena, todos os participantes dessa oração recebem resistência a dano mental 5. <i>Pré-requisito: Pre 2.</i></p>",
-    "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "chatDescription": "",
+    "activation": "complete",
+    "cost": 3,
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -17,12 +18,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767468426324,
-    "modifiedTime": 1767841971002,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785440620376,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

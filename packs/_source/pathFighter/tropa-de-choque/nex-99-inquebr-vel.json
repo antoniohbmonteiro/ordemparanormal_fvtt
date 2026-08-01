@@ -7,10 +7,11 @@
     "id": 0,
     "abilityType": "path",
     "preRequisite": "",
-    "description": "<p>Enquanto estiver machu\u0002cado, voc&ecirc; recebe +5 na Defesa e resist&ecirc;ncia a dano 5. Enquanto estiver morrendo, em vez do normal, voc&ecirc; n&atilde;o fica indefeso e ainda pode realizar a&ccedil;&otilde;es. Voc&ecirc; ainda segue as regras de morte normalmente.</p>",
+    "description": "<p>Enquanto estiver machucado, você recebe +5 na Defesa e resistência a dano 5. Enquanto estiver morrendo, em vez do normal, você não fica indefeso e ainda pode realizar ações. Você ainda segue as regras de morte normalmente.</p>",
+    "chatDescription": "",
+    "activation": "passive",
     "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391179358,
-    "modifiedTime": 1767391179358,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785355080756,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

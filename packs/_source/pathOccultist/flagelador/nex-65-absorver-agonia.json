@@ -7,10 +7,11 @@
     "id": 0,
     "abilityType": "path",
     "preRequisite": "",
-    "description": "<p>Sempre que reduz um ou mais inimigos a 0 PV com um ritual, voc&ecirc; recebe uma quantidade de PE tempor&aacute;rios igual ao c&iacute;rculo do ritual utilizado. Por exem\u0002plo, se ativar esse poder com um ritual de 2&ordm; c&iacute;rculo, receber&aacute; 2 PE.</p>",
+    "description": "<p>Sempre que reduz um ou mais inimigos a 0 PV com um ritual, você recebe uma quantidade de PE temporários igual ao círculo do ritual utilizado. Por exemplo, se ativar esse poder com um ritual de 2º círculo, receberá 2 PE.</p>",
+    "chatDescription": "",
+    "activation": "",
     "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391166811,
-    "modifiedTime": 1767391166811,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785526755345,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

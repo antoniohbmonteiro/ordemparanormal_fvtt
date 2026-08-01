@@ -7,10 +7,11 @@
     "id": 0,
     "abilityType": "path",
     "preRequisite": "",
-    "description": "<p>Uma vez por rodada, se estiver em alcance curto de um aliado machucado ou mor\u0002rendo, voc&ecirc; pode se aproximar do aliado com uma a&ccedil;&atilde;o livre (desde que seja capaz de faz&ecirc;-lo usando seu deslocamento normal). Al&eacute;m disso, sempre que curar PV ou remover condi&ccedil;&otilde;es do aliado, voc&ecirc; e o aliado recebem +5 na Defesa at&eacute; o in&iacute;cio de seu pr&oacute;ximo turno. Por fim, para voc&ecirc;, o total de espa&ccedil;os ocupados por carregar um personagem &eacute; reduzido pela metade.</p>",
+    "description": "<p>Uma vez por rodada, se estiver em alcance curto de um aliado machucado ou morrendo, você pode se aproximar do aliado com uma ação livre (desde que seja capaz de fazê-lo usando seu deslocamento normal). Além disso, sempre que curar PV ou remover condições do aliado, você e o aliado recebem +5 na Defesa até o início de seu próximo turno. Por fim, para você, o total de espaços ocupados por carregar um personagem é reduzido pela metade.</p>",
+    "chatDescription": "",
+    "activation": "free",
     "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391187608,
-    "modifiedTime": 1767391187608,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785524352911,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

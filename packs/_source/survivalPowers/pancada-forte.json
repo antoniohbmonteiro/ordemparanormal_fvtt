@@ -5,12 +5,13 @@
   "img": "systems/ordemparanormal/media/icons/abilities/class/survivor/pancada-forte.svg",
   "system": {
     "id": 0,
-    "abilityType": "",
+    "abilityType": "class",
     "preRequisite": "",
     "description": "<p>Quando faz um ataque, você pode gastar 1 PE para receber @DisplayDice[qtd:1|sign:plus|dc:d20] no teste de ataque. Se você se tornar um combatente (veja “Treinamento Especial”, a seguir), perde esta habilidade, mas reduz o custo de ativação de Ataque Especial em –1 PE.</p>",
-    "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "chatDescription": "",
+    "activation": "reaction",
+    "cost": 1,
+    "costType": "PE"
   },
   "effects": [],
   "folder": null,
@@ -24,12 +25,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1768024765672,
-    "modifiedTime": 1768025265743,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785353728630,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "_key": "!items!Bd8HCQ7NjetfvTqC"
 }

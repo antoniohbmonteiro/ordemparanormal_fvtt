@@ -7,10 +7,11 @@
     "id": 0,
     "abilityType": "path",
     "preRequisite": "",
-    "description": "<p>Voc&ecirc; cria um grim&oacute;rio especial, que arma\u0002zena rituais que sua mente n&atilde;o seria capaz de guardar. Voc&ecirc; aprende uma quantidade de rituais de 1&ordm; ou 2&ordm; c&iacute;rculos igual ao seu Intelecto. Quando ganha acesso a um novo c&iacute;rculo, pode incluir um novo ritual desse c&iacute;rculo em seu grim&oacute;rio. Esses rituais n&atilde;o contam em seu limite de rituais conhecidos. Para conjurar um ritual armazenado em seu grim&oacute;rio, voc&ecirc; precisa antes empunhar o grim&oacute;rio e gastar uma a&ccedil;&atilde;o completa o folheando para relembrando o ritual. O grim&oacute;rio ocupa 1 espa&ccedil;o em seu invent&aacute;rio. Se perd&ecirc;-lo, voc&ecirc; pode replic&aacute;-lo com duas a&ccedil;&otilde;es de interl&uacute;dio.</p>",
+    "description": "<p>Você cria um grimório especial, que armazena rituais que sua mente não seria capaz de guardar. Você aprende uma quantidade de rituais de 1º ou 2º círculos igual ao seu Intelecto. Quando ganha acesso a um novo círculo, pode incluir um novo ritual desse círculo em seu grimório. Esses rituais não contam em seu limite de rituais conhecidos. Para conjurar um ritual armazenado em seu grimório, você precisa antes empunhar o grimório e gastar uma ação completa o folheando para relembrando o ritual. O grimório ocupa 1 espaço em seu inventário. Se perdê-lo, você pode replicá-lo com duas ações de interlúdio.</p>",
+    "chatDescription": "",
+    "activation": "passive",
     "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391166811,
-    "modifiedTime": 1767391166811,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785526778325,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

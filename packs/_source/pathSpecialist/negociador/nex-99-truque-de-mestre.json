@@ -7,10 +7,11 @@
     "id": 0,
     "abilityType": "path",
     "preRequisite": "",
-    "description": "<p>Acostumado a uma vida de fingimento e manipula&ccedil;&atilde;o, voc&ecirc; pode gastar 5 PE para simular o efeito de qualquer habi\u0002lidade que voc&ecirc; tenha visto um de seus aliados usar durante a cena. Voc&ecirc; ignora os pr&eacute;-requisitos da habilidade, mas ainda precisa pagar todos os seus custos, incluindo a&ccedil;&otilde;es, PE e materiais, e ela usa os seus par&acirc;metros de jogo, como se voc&ecirc; estivesse usando a habilidade em quest&atilde;o.</p>",
-    "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "description": "<p>Acostumado a uma vida de fingimento e manipulação, você pode gastar 5 PE para simular o efeito de qualquer habilidade que você tenha visto um de seus aliados usar durante a cena. Você ignora os pré-requisitos da habilidade, mas ainda precisa pagar todos os seus custos, incluindo ações, PE e materiais, e ela usa os seus parâmetros de jogo, como se você estivesse usando a habilidade em questão.</p>",
+    "chatDescription": "",
+    "activation": "",
+    "cost": 5,
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391187608,
-    "modifiedTime": 1767391187608,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785525622856,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

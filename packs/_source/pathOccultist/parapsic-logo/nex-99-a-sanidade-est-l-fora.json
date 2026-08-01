@@ -7,9 +7,10 @@
     "abilityType": "class",
     "preRequisite": "Trilha: Parapsicólogo",
     "description": "<p>Graças aos seus estudos, a capacidade de curar a mente humana de (quase) todas as mazelas está ao seu alcance. Você pode gastar <strong>uma ação de movimento</strong> e <strong>5 PE</strong> para remover todas as condições de medo ou mentais de uma pessoa adjacente (incluindo você mesmo).</p>",
-    "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "chatDescription": "",
+    "activation": "movement",
+    "cost": 5,
+    "costType": "PE"
   },
   "effects": [],
   "folder": "bxfo0A2o3rfDDQFG",
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391166811,
-    "modifiedTime": 1767400339502,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785527202379,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

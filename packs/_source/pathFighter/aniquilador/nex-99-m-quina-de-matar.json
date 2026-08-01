@@ -8,9 +8,10 @@
     "abilityType": "path",
     "preRequisite": "",
     "description": "<p>A categoria da arma favorita passa a ser reduzida em III, ela recebe +2 na margem de amea&ccedil;a e seu dano aumenta em um dado do mesmo tipo.</p>",
+    "chatDescription": "",
+    "activation": "passive",
     "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391179358,
-    "modifiedTime": 1767391179358,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785354448834,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

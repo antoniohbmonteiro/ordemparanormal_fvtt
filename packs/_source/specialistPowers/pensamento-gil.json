@@ -7,9 +7,10 @@
     "abilityType": "class",
     "preRequisite": "",
     "description": "<p>Uma vez por rodada, durante uma cena de investiga&ccedil;&atilde;o, voc&ecirc; pode gastar 2 PE para fazer uma a&ccedil;&atilde;o de procurar pistas adicional.</p>",
-    "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "chatDescription": "",
+    "activation": "passive",
+    "cost": 2,
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -17,12 +18,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1768014041889,
-    "modifiedTime": 1768014041889,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785352000375,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

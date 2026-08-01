@@ -6,10 +6,11 @@
     "id": 0,
     "abilityType": "class",
     "preRequisite": "",
-    "description": "<p>Voc&ecirc; pode gastar uma a&ccedil;&atilde;o padr&atilde;o e 1 PE para disparar uma arma de fogo na dire&ccedil;&atilde;o de um personagem no alcance da arma para for&ccedil;&aacute;-lo a se proteger. Fa&ccedil;a um teste de Pontaria contra a Vontade do alvo. Se vencer, at&eacute; o in&iacute;cio do seu pr&oacute;ximo turno o alvo n&atilde;o pode sair do lugar onde est&aacute; e sofre &ndash;5 em testes de ataque. A crit&eacute;rio do mestre, o alvo recebe +5 no teste de Vontade se estiver em um lugar extrema\u0002mente perigoso, como uma casa em chamas ou um barco afundando. Este &eacute; um efeito de medo.</p>",
+    "description": "<p>Você pode gastar uma ação padrão e 1 PE para disparar uma arma de fogo na direção de um personagem no alcance da arma para forçá-lo a se proteger. Faça um teste de Pontaria contra a Vontade do alvo. Se vencer, até o início do seu próximo turno o alvo não pode sair do lugar onde está e sofre –5 em testes de ataque. A critério do mestre, o alvo recebe +5 no teste de Vontade se estiver em um lugar extremamente perigoso, como uma casa em chamas ou um barco afundando. Este é um efeito de medo.</p>",
+    "chatDescription": "",
+    "activation": "default",
     "cost": "1",
-    "costType": "PE",
-    "activation": "Padrão"
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -17,12 +18,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1768012548817,
-    "modifiedTime": 1768012548817,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785351430456,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

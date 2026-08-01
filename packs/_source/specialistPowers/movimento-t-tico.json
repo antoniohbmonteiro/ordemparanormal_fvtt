@@ -7,9 +7,10 @@
     "abilityType": "class",
     "preRequisite": "Atletismo",
     "description": "<p>Voc&ecirc; pode gastar 1 PE para ignorar a penalidade em deslocamento por terreno dif&iacute;cil e por escalar at&eacute; o final do turno.</p>",
-    "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "chatDescription": "",
+    "activation": "free",
+    "cost": 1,
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -17,12 +18,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1768014041889,
-    "modifiedTime": 1768014041889,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785352115235,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

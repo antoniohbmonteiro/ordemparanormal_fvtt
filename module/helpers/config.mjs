@@ -323,6 +323,7 @@ op.ritualDegree = { 5: "Outro", 1: "1", 2: "2", 3: "3", 4: "4" };
  * @type {Object}
  */
 op.dropdownExecution = {
+	passive: "op.executionChoices.passive",
 	free: "op.executionChoices.free",
 	movement: "op.executionChoices.movement",
 	default: "op.executionChoices.default",
@@ -476,7 +477,7 @@ op.CompendiumEntries = {
 	technology: "Compendium.ordemparanormal.bookrules.JournalEntry.wlBeWbK9TfrlufWA.JournalEntryPage.DSLIxmTFfyoNtO5s",
 	will: "Compendium.ordemparanormal.bookrules.JournalEntry.wlBeWbK9TfrlufWA.JournalEntryPage.xt8G3szvcjfUn55D",
 	freeSkill: "Compendium.ordemparanormal.bookrules.JournalEntry.wlBeWbK9TfrlufWA.JournalEntryPage.qTwpNeH48xyzrz1w",
-	origin: "Compendium.ordemparanormal.origins",
-	class: "Compendium.ordemparanormal.classes",
-	path: "Compendium.ordemparanormal.paths",
+	origin: "ordemparanormal.origins",
+	class: "ordemparanormal.classes",
+	path: "ordemparanormal.paths",
 };

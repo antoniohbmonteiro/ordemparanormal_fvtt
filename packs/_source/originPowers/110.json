@@ -5,9 +5,12 @@
   "img": "systems/ordemparanormal/media/icons/abilities/origin/110.svg",
   "system": {
     "id": 0,
-    "abilityType": "ability",
+    "abilityType": "origin",
     "preRequisite": "",
-    "description": "<p>Quando faz um teste de per&iacute;cia usando For&ccedil;a ou Agilidade (exceto Luta e Pontaria) voc&ecirc; pode gastar 2 PE para receber +5 nesse teste.</p>"
+    "description": "<p>Quando faz um teste de per&iacute;cia usando For&ccedil;a ou Agilidade (exceto Luta e Pontaria) voc&ecirc; pode gastar 2 PE para receber +5 nesse teste.</p>",
+    "chatDescription": "",
+    "activation": "reaction",
+    "cost": 2
   },
   "effects": [],
   "folder": null,
@@ -19,11 +22,11 @@
   "flags": {},
   "_stats": {
     "systemId": "ordemparanormal",
-    "systemVersion": "6.5.0",
-    "coreVersion": "13.351",
+    "systemVersion": "7.3.3",
+    "coreVersion": "14.365",
     "createdTime": 1712008335124,
-    "modifiedTime": 1768851713224,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3",
+    "modifiedTime": 1785354308528,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

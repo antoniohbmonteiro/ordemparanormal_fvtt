@@ -5,12 +5,13 @@
   "img": "systems/ordemparanormal/media/icons/abilities/class/survivor/iniciado.svg",
   "system": {
     "id": 0,
-    "abilityType": "",
+    "abilityType": "class",
     "preRequisite": "",
     "description": "<p>Você aprende e pode conjurar um ritual de 1º círculo a sua escolha. Se você se tornar um ocultista (veja “Treinamento Especial”, a seguir), soma este ritual aos três rituais que aprende com Escolhido pelo Outro Lado.</p>",
+    "chatDescription": "",
+    "activation": "passive",
     "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "costType": "PE"
   },
   "effects": [],
   "folder": null,
@@ -24,12 +25,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1768024886449,
-    "modifiedTime": 1768025261644,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785353737363,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "_key": "!items!xW6IJ8kzVp4QO2MN"
 }

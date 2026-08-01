@@ -312,6 +312,7 @@
 	"op.cost": "Custo",
 
 	"op.executionChoices": {
+		"passive": "Passivo",
 		"free": "Livre",
 		"movement": "Movimento",
 		"default": "Padrão",

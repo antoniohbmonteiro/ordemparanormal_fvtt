@@ -6,10 +6,11 @@
     "id": 0,
     "abilityType": "class",
     "preRequisite": "",
-    "description": "<p>Uma vez por cena, voc&ecirc; pode gastar 2 PE para fazer uma a&ccedil;&atilde;o de investiga&ccedil;&atilde;o adi\u0002cional, mas deve usar For&ccedil;a ou Agilidade como atributo-base do teste</p>",
+    "description": "<p>Uma vez por cena, você pode gastar 2 PE para fazer uma ação de investigação adicional, mas deve usar Força ou Agilidade como atributo-base do teste</p>",
+    "chatDescription": "",
+    "activation": "passive",
     "cost": "2",
-    "costType": "PE",
-    "activation": "Livre"
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -17,12 +18,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1768012548817,
-    "modifiedTime": 1768012548817,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785351854540,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

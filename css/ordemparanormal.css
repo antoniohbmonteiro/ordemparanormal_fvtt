@@ -71,6 +71,10 @@ dialog.ordemparanormal.application {
 	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
 }
 
+.display-hidden {
+	display: none !important;
+}
+
 .grid,
 .grid-2col {
 	display: grid;

@@ -7,10 +7,11 @@
     "id": 0,
     "abilityType": "path",
     "preRequisite": "",
-    "description": "<p>Voc&ecirc; pode usar uma a&ccedil;&atilde;o padr&atilde;o e 2 PE para curar 2d10 pontos de vida de um aliado adjacente. Voc&ecirc; pode curar +1d10 PV respec\u0002tivamente em NEX 40%, 65% e 99%, gastando +1 PE por dado adicional de cura.</p>",
-    "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "description": "<p>Você pode usar uma ação padrão e 2 PE para curar 2d10 pontos de vida de um aliado adjacente. Você pode curar +1d10 PV respectivamente em NEX 40%, 65% e 99%, gastando +1 PE por dado adicional de cura.</p>",
+    "chatDescription": "",
+    "activation": "default",
+    "cost": 2,
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391187608,
-    "modifiedTime": 1767391187608,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785524317015,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

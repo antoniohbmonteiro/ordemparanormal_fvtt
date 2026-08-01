@@ -5,9 +5,12 @@
   "img": "systems/ordemparanormal/media/icons/abilities/origin/ferramentas-favoritas.svg",
   "system": {
     "id": 0,
-    "abilityType": "ability",
+    "abilityType": "origin",
     "preRequisite": "",
-    "description": "<p>Um item a sua escolha (exceto armas) conta como uma categoria abaixo (por exemplo, um item de categoria II conta como categoria I para voc&ecirc;).</p>"
+    "description": "<p>Um item a sua escolha (exceto armas) conta como uma categoria abaixo (por exemplo, um item de categoria II conta como categoria I para voc&ecirc;).</p>",
+    "chatDescription": "",
+    "activation": "passive",
+    "cost": null
   },
   "effects": [],
   "folder": null,
@@ -19,11 +22,11 @@
   "flags": {},
   "_stats": {
     "systemId": "ordemparanormal",
-    "systemVersion": "6.5.0",
-    "coreVersion": "13.351",
+    "systemVersion": "7.3.3",
+    "coreVersion": "14.365",
     "createdTime": 1712008414654,
-    "modifiedTime": 1768851815202,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3",
+    "modifiedTime": 1785354183817,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

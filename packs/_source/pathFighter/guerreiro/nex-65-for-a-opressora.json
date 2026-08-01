@@ -7,10 +7,11 @@
     "id": 0,
     "abilityType": "path",
     "preRequisite": "",
-    "description": "<p>Quando acerta um ataque corpo a corpo, voc&ecirc; pode gastar 1 PE para realizar uma manobra derrubar ou empur\u0002rar contra o alvo do ataque como a&ccedil;&atilde;o livre. Se escolher empurrar, recebe um b&ocirc;nus de +5 para cada 10 pontos de dano que causou no alvo. Se escolher derrubar e vencer no teste oposto, voc&ecirc; pode gastar 1 PE para fazer um ataque adicional contra o alvo ca&iacute;do.</p>",
-    "cost": "",
-    "costType": "PE",
-    "activation": ""
+    "description": "<p>Quando acerta um ataque corpo a corpo, você pode gastar 1 PE para realizar uma manobra derrubar ou empurrar contra o alvo do ataque como ação livre. Se escolher empurrar, recebe um bônus de +5 para cada 10 pontos de dano que causou no alvo. Se escolher derrubar e vencer no teste oposto, você pode gastar 1 PE para fazer um ataque adicional contra o alvo caído.</p>",
+    "chatDescription": "",
+    "activation": "free",
+    "cost": 1,
+    "costType": "PE"
   },
   "effects": [],
   "flags": {},
@@ -18,12 +19,12 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null,
-    "coreVersion": "13.351",
+    "coreVersion": "14.365",
     "systemId": "ordemparanormal",
-    "systemVersion": "7.2.4",
+    "systemVersion": "7.3.3",
     "createdTime": 1767391179358,
-    "modifiedTime": 1767391179358,
-    "lastModifiedBy": "uX8kbsijC8bcpBa3"
+    "modifiedTime": 1785354664206,
+    "lastModifiedBy": "DnDtVz8d1Mx168x6"
   },
   "ownership": {
     "default": 0,

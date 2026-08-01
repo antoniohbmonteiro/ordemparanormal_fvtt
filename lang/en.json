@@ -310,6 +310,7 @@
 	"op.element": "Element",
 
 	"op.executionChoices": {
+		"passive": "Passive",
 		"free": "Free",
 		"movement": "Movement",
 		"default": "Standard",
