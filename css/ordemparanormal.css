@@ -290,18 +290,27 @@ dialog.ordemparanormal.application {
 .system-ordemparanormal .threat {
 	display: flex;
 	flex-direction: column;
-	/* ESPAÇAMENTO LATERAL: Descola o layout das bordas da janela do Foundry */
-	padding: 8px 12px 12px 12px;
-	/* Reset global */
+	/* Inputs in threat sheet should visually match the agent sheet inputs */
 }
 .system-ordemparanormal .threat input,
-.system-ordemparanormal .threat select {
-	border: 1px solid rgba(0, 0, 0, 0.15);
-	background: rgba(255, 255, 255, 0.5);
-	border-radius: 2px;
-	height: 20px;
-	padding: 0 4px;
-	font-size: 12px;
+.system-ordemparanormal .threat select,
+.system-ordemparanormal .threat textarea {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 0;
+	height: 22px;
+	padding: 0 6px;
+	font-size: 13px;
+	color: inherit;
+	outline: none;
+}
+.system-ordemparanormal .threat {
+	/* Keep resource inputs styled as their specific block defines */
+}
+.system-ordemparanormal .threat .resource input,
+.system-ordemparanormal .threat .resource select {
+	/* resource block below will override as needed */
 }
 .system-ordemparanormal .threat .resource {
 	background: rgba(0, 0, 0, 0.03);
@@ -327,7 +336,7 @@ dialog.ordemparanormal.application {
 .system-ordemparanormal .threat .threat-header {
 	flex: 0 0 auto;
 	gap: 10px;
-	padding-bottom: 8px;
+	padding: 0 16px 8px 16px;
 	margin-bottom: 8px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -419,6 +428,7 @@ dialog.ordemparanormal.application {
 }
 .system-ordemparanormal .threat .threat-body {
 	flex: 1;
+	padding: 0 16px;
 	/* DUAS COLUNAS CENTRAIS */
 }
 .system-ordemparanormal .threat .threat-body .central-columns {
@@ -660,8 +670,9 @@ dialog.ordemparanormal.application {
 	.threat-skills-container
 	.skill-box
 	.item-space {
-	gap: 4px;
+	gap: 2px;
 	flex: 0 0 auto;
+	padding: 0;
 }
 .system-ordemparanormal
 	.threat
@@ -675,7 +686,6 @@ dialog.ordemparanormal.application {
 	width: 75px;
 	height: 20px;
 	font-size: 10px;
-	padding: 0 2px;
 }
 .system-ordemparanormal
 	.threat
