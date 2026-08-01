@@ -160,7 +160,7 @@
 				</div>
 
 				{{#if usingWithoutSanityRule}}
-					<div class="resource flex-group-center">
+					<div class="resource flex-group-center pe-pd-resource">
 						<label for="system.PD.value" class="resource-label">{{localize "op.PD"}} </label>
 						<div class="resource-content flexrow flex-center flex-between">
 							<input type="text" name="system.PD.value" value="{{system.PD.value}}" data-dtype="Number" />
@@ -175,7 +175,7 @@
 						</div>
 					</div>
 					<div class="resource flex-group-center">
-						<label for="system.PD.value" class="resource-label">{{localize "op.pdPerRound"}} </label>
+						<label for="system.PD.perRound" class="resource-label">{{localize "op.pdPerRound"}} </label>
 						<div class="resource-content flexrow flex-center flex-between">
 							<input type="number" name="system.PD.perRound" value="{{system.PD.perRound}}" data-dtype="Number" disabled />
 						</div>
@@ -195,7 +195,7 @@
 							/>
 						</div>
 					</div>
-					<div class="resource flex-group-center">
+					<div class="resource flex-group-center pe-pd-resource">
 						<label for="system.PE.value" class="resource-label">{{localize "op.PE"}} </label>
 						<div class="resource-content flexrow flex-center flex-between">
 							<input type="text" name="system.PE.value" value="{{system.PE.value}}" data-dtype="Number" />
@@ -210,7 +210,7 @@
 						</div>
 					</div>
 					<div class="resource flex-group-center">
-						<label for="system.PE.value" class="resource-label">{{localize "op.pePerRound"}} </label>
+						<label for="system.PE.perRound" class="resource-label">{{localize "op.pePerRound"}} </label>
 						<div class="resource-content flexrow flex-center flex-between">
 							<input
 								type="number"
