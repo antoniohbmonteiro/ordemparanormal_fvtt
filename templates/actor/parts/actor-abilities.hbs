@@ -198,11 +198,7 @@
 								<div class="item-meta-col col-type"><span class="badge-cat">—</span></div>
 								<div class="item-meta-col col-cost"><span class="badge-cat highlight">{{item.system.cost}}</span></div>
 								<div class="item-meta-col col-exec">
-									<span class="badge-cat">
-										{{#if item.system.activation}}{{localize
-												(concat "op.executionChoices." item.system.activation)
-											}}{{else}}—{{/if}}
-									</span>
+									<span class="badge-cat">{{item.activationLabel}}</span>
 								</div>
 
 								<div class="item-meta-col col-controls">
