@@ -7,7 +7,7 @@
     "id": 0,
     "abilityType": "class",
     "preRequisite": "",
-    "description": "<p>Você pode não ter treinamento especial, mas compensa com dedicação e esforço. Quando faz um teste de perícia, você pode gastar 1 PE para receber +2 nesse teste.</p>",
+    "description": "<p>Você pode encontrar esse conteúdo na <strong>página 31 do suplemento Sobrevivendo ao Horror</strong>.</p>",
     "chatDescription": "",
     "activation": "reaction",
     "cost": 1,
@@ -29,8 +29,8 @@
     "systemId": "ordemparanormal",
     "systemVersion": "7.3.3",
     "createdTime": 1768024661675,
-    "modifiedTime": 1785353833146,
-    "lastModifiedBy": "DnDtVz8d1Mx168x6"
+    "modifiedTime": 1785686769740,
+    "lastModifiedBy": "vUTMyOH4FOrOifbw"
   },
   "_key": "!items!EU24cq2csWa0ryEj"
 }

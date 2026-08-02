@@ -7,7 +7,7 @@
     "id": 0,
     "abilityType": "class",
     "preRequisite": "",
-    "description": "<p>Você se torna treinado em uma perícia adicional a sua escolha.</p>",
+    "description": "<p>Você pode encontrar esse conteúdo na <strong>página 32 do suplemento Sobrevivendo ao Horror</strong>.</p>",
     "chatDescription": "",
     "activation": "passive",
     "cost": "",
@@ -29,8 +29,8 @@
     "systemId": "ordemparanormal",
     "systemVersion": "7.3.3",
     "createdTime": 1768024787599,
-    "modifiedTime": 1785353743927,
-    "lastModifiedBy": "DnDtVz8d1Mx168x6"
+    "modifiedTime": 1785686824101,
+    "lastModifiedBy": "vUTMyOH4FOrOifbw"
   },
   "_key": "!items!oLSymQN1wrnEbcyp"
 }

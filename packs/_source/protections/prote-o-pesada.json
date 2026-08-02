@@ -4,7 +4,7 @@
   "_id": "8Ntoxhrc8rxCuTA5",
   "img": "systems/ordemparanormal/media/icons/protections/protecao-pesada.svg",
   "system": {
-    "description": "<p>Equipamento usado por for&ccedil;as especiais da pol&iacute;cia e pelo ex&eacute;rcito. Consiste de capa\u0002cete, ombreiras, joelheiras e caneleiras, al&eacute;m de um colete com v&aacute;rias camadas de kevlar. Fornece resis\u0002t&ecirc;ncia a bal&iacute;stico, corte, impacto e perfura&ccedil;&atilde;o 2. No entanto, por ser desconfort&aacute;vel e volumosa, imp&otilde;e &ndash;5 em testes de per&iacute;cias que sofrem penalidade de carga.</p>",
+    "description": "<p>Equipamento usado por forças especiais da polícia e pelo exército. Consiste de capa\u0002cete, ombreiras, joelheiras e caneleiras, além de um colete com várias camadas de kevlar. Fornece resistência a balístico, corte, impacto e perfuração 2. No entanto, por ser desconfortável e volumosa, impõe –5 em testes de perícias que sofrem penalidade de carga.</p>",
     "chatDescription": "",
     "weight": 5,
     "category": "2",
@@ -29,8 +29,8 @@
     "systemVersion": "7.3.3",
     "coreVersion": "14.365",
     "createdTime": 1710371314891,
-    "modifiedTime": 1784768244353,
-    "lastModifiedBy": "mCARmiewelPiv8Ze",
+    "modifiedTime": 1785690556822,
+    "lastModifiedBy": "vUTMyOH4FOrOifbw",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

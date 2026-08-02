@@ -7,7 +7,7 @@
     "id": 0,
     "abilityType": "class",
     "preRequisite": "",
-    "description": "<p>Quando faz um ataque, você pode gastar 1 PE para receber @DisplayDice[qtd:1|sign:plus|dc:d20] no teste de ataque. Se você se tornar um combatente (veja “Treinamento Especial”, a seguir), perde esta habilidade, mas reduz o custo de ativação de Ataque Especial em –1 PE.</p>",
+    "description": "<p>Você pode encontrar esse conteúdo na <strong>página 31 do suplemento Sobrevivendo ao Horror</strong>.</p>",
     "chatDescription": "",
     "activation": "reaction",
     "cost": 1,
@@ -29,8 +29,8 @@
     "systemId": "ordemparanormal",
     "systemVersion": "7.3.3",
     "createdTime": 1768024765672,
-    "modifiedTime": 1785353728630,
-    "lastModifiedBy": "DnDtVz8d1Mx168x6"
+    "modifiedTime": 1785686803160,
+    "lastModifiedBy": "vUTMyOH4FOrOifbw"
   },
   "_key": "!items!Bd8HCQ7NjetfvTqC"
 }
