@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/SouOWendel/ordemparanormal-fvtt/blob/main/media/op-logo.png?raw=true" alt="logo do Ordem Paranormal">
+<!-- <img src="https://github.com/SouOWendel/ordemparanormal-fvtt/blob/main/media/op-logo.png?raw=true" alt="logo do Ordem Paranormal"> -->
 <p dir="auto" style="text-align: center;">Acesse o <a href="https://discord.gg/G8AwJwJXa5">Servidor do Discord</a> para atualiza&ccedil;&otilde;es e feedbacks, para postagens em geral, siga-me no <a href="https://twitter.com/EuSouOWendel">Twitter</a>, se realmente curtir o conte&uacute;do, n&atilde;o deixe de apoiar com qualquer valor na chave PIX: souowendel@gmail.com ou utilizando a plataforma do <a href="https://ko-fi.com/souowendel">Ko-fi</a>.&nbsp;</p>
 
 ![Supported Foundry Versions](https://img.shields.io/endpoint?url=https%3A%2F%2Ffoundryshields.com%2Fversion%3Fstyle%3Dflat%26url%3Dhttps%3A%2F%2Fgithub.com%2FSouOWendel%2Fordemparanormal-fvtt%2Freleases%2Flatest%2Fdownload%2Fsystem.json)
@@ -72,7 +72,20 @@ As suites disponíveis:
 
 ## Contribuidores
 
-- Agradecimento ao <a href="https://twitter.com/ciconiaborns">@jojo</a> pelas traduções do sistema para o Inglês.
+- Agradecimento ao <a href="https>//twitter.com/ciconiaborns">@jojo</a> pelas traduções do sistema para o Inglês.
+- Agradacimento ao <strong>Dzeta (de discord: arcojin): </strong>
+	tradução e adaptação do sistema para o Inglês;
+- Agradacimento ao <strong>Marcos Miranda (de discord: .nyazi): </strong>
+	vetorização e criação de ícones para compêndio.
+- Agradacimento ao <strong>Gyoko (de discord: fuckpatyo): </strong>
+	grandes contribuições no desenvolvimento da ficha de ameaças.
+- Agradacimento a <strong>Fresko (de discord: jojoexperiencia): </strong>
+	contribuiu enormemente na criação dos compêndios.
+- Agradacimento ao <strong>Fabrício (de discord: fabricio): </strong>
+	automatização do sistema de combate, melhrorias gerais e correções de bugs.
+- Agradacimento ao <strong>Mercy (de discord: notnanomercy): </strong>
+	melhorias gerais no sistema e correções de bugs. Criador do módulo Paranormal Toolkit, com automatizações e melhorias no sistema.
+
 
 ## Demonstração do Sistema
 

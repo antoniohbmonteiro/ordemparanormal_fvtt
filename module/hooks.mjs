@@ -272,14 +272,12 @@ export default function () {
 		badge.classList.add("flexcol");
 		badge.classList.add("op", "system-badge");
 		badge.innerHTML = `
-    <img src="systems/ordemparanormal/media/op-logo.png" 
-		data-tooltip="${game.i18n.localize("op.op")}" alt="${game.system.title}">
     <span class="system-info">${game.i18n.localize("op.sidebar.updateNotes")} 
 		<strong>${game.system.version}</strong> </span>
 		<p><span class="system-info" data-tooltip="${game.i18n.localize("op.sidebar.discord")}">
 		<i class="fa-brands fa-discord"></i> souowendel</span>&nbsp;&nbsp;
 		<a href="https://x.com/EuSouOWendel" target="_blank" data-tooltip="${game.i18n.localize("op.sidebar.twitter")}">
-		<span class="system-info"><i class="fa-brands fa-twitter"></i> souowendel</span></p>
+		<span class="system-info"><i class="fa-brands fa-twitter"></i> eusouowendel</span></p>
   `;
 
 		// V13: Use standard DOM insertion
