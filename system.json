@@ -159,6 +159,16 @@
 			}
 		},
 		{
+			"name": "paranormalPowers",
+			"label": "Poderes Paranormais",
+			"system": "ordemparanormal",
+			"path": "packs/paranormalPowers",
+			"type": "Item",
+			"ownership": {
+				"PLAYER": "OBSERVER"
+			}
+		},
+		{
 			"name": "agents",
 			"label": "Agentes Pré-Criados",
 			"system": "ordemparanormal",
@@ -254,7 +264,7 @@
 					"name": "Outros Poderes",
 					"sorting": "m",
 					"color": "#484848",
-					"packs": ["originPowers", "generalPowers"]
+					"packs": ["originPowers", "generalPowers", "paranormalPowers"]
 				},
 				{
 					"name": "Fichas Pré-Criadas",
