@@ -897,8 +897,8 @@ dialog.ordemparanormal.application {
 	gap: 10px;
 	margin: 5px 0;
 }
-.system-ordemparanormal .resources .pe-pd-resource {
-	min-width: 100px;
+.system-ordemparanormal .resources .pe-pd-perRound-resource {
+	max-width: 70px;
 }
 .system-ordemparanormal .invalid {
 	position: relative;
