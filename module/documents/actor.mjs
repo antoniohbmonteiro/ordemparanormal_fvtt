@@ -191,8 +191,7 @@ export class OrdemActor extends Actor {
 						const result = Roll.safeEval(formula);
 
 						// Atualiza o valor na memória para ser aplicado corretamente pelo Foundry
-						// Importante: Convertemos para string pois o sistema espera isso em alguns casos
-						change.value = result.toString();
+						change.value = result;
 					} catch (e) {
 						console.error(`Ordem Paranormal | Erro ao calcular fórmula no efeito "${effect.name}":`, e);
 					}
