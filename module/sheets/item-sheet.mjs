@@ -169,6 +169,7 @@ export class OrdemItemSheet extends api.HandlebarsApplicationMixin(sheets.ItemSh
 
 		context.editingDescription = this._isEditingDescription;
 		context.editingChatDescription = this._isEditingChatDescription;
+		context.isAnyDescriptionEditing = this._isEditingDescription || this._isEditingChatDescription;
 
 		// https://foundryvtt.com/api/classes/foundry.abstract.Document.html#updateDocuments
 		// https://foundryvtt.com/api/classes/foundry.abstract.Document.html#deleteDocuments
