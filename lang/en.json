@@ -675,7 +675,8 @@
 		"TabDuration": "Duration"
 	},
 
-	"op.agentConfigTitle": "Configuration: {name}",
+	"op.agentConfigTitleWindow": "Configuration: {name}",
+	"op.agentConfigTitleWindowNoName": "Agent Options",
 	"WARN.singletonItemExists": "You already have an item of type '{type}' on your sheet! Remove the existing one first.",
 	"op.biographyPlaceholder": "Your character's personality, appearance, and history here.",
 	"op.goalsPlaceholder": "Your goals here.",

@@ -471,7 +471,7 @@ export class OrdemActorSheet extends api.HandlebarsApplicationMixin(sheets.Actor
 			controls.unshift({
 				action: "openConfig",
 				icon: "fas fa-id-card",
-				label: game.i18n.localize("op.agentConfigTitle"),
+				label: game.i18n.localize("op.agentConfigTitleWindowNoName"),
 			});
 		}
 

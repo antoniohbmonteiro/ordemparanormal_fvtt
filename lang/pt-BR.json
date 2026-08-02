@@ -677,7 +677,8 @@
 		"TabDuration": "Duração"
 	},
 
-	"op.agentConfigTitle": "Configurações: {name}",
+	"op.agentConfigTitleWindow": "Configurações: {name}",
+	"op.agentConfigTitleWindowNoName": "Opções do Agente",
 	"WARN.singletonItemExists": "Você já possui um item do tipo '{type}' na sua ficha! Remova o antigo primeiro.",
 	"op.biographyPlaceholder": "A personalidade, aparência e história do seu personagem aqui.",
 	"op.goalsPlaceholder": "Os seus objetivos aqui.",
