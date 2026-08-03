@@ -77,7 +77,7 @@ export class ThreatData extends foundry.abstract.TypeDataModel {
 				str: new fields.SchemaField({ value: new fields.NumberField({ integer: true, initial: 1 }) }),
 				vit: new fields.SchemaField({ value: new fields.NumberField({ integer: true, initial: 1 }) }),
 				movement: new fields.SchemaField({
-					walk: new fields.NumberField({ integer: true, initial: 0 }),
+					walk: new fields.NumberField({ integer: false, initial: 0 }),
 					unit: new fields.StringField({ initial: "m" }),
 					squares: new fields.NumberField({ integer: true, initial: 0 }),
 				}),
