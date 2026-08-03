@@ -38,9 +38,8 @@
 							<!-- IDENTIDADE DA HABILIDADE -->
 							<div class="item-identity flexrow">
 								<div class="item-image slide">
-									<a class="rollable" data-action="onRoll">
-										<img src="{{item.img}}" title="{{item.name}}" width="24" height="24" />
-									</a>
+									<img src="{{item.img}}" title="{{item.name}}" class="item-toggle" style="cursor: pointer;" />
+									<a class="rollable" data-roll-type="item" data-action="onRoll"><i class="fa-solid fa-dice-d20"></i></a>
 								</div>
 								<!-- Nome clicável para expandir descrição -->
 								<span
