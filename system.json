@@ -343,7 +343,7 @@
 	"socket": true,
 	"url": "https://github.com/SouOWendel/ordemparanormal_fvtt",
 	"manifest": "https://raw.githubusercontent.com/souowendel/ordemparanormal_fvtt/main/system.json",
-	"download": "https://github.com/SouOWendel/ordemparanormal_fvtt/releases/download/v7.3.3/ordem_fvtt-v7.3.3.zip",
+	"download": "https://github.com/SouOWendel/ordemparanormal_fvtt/releases/download/v8.0.1/ordem_fvtt-v8.0.1.zip",
 	"bugs": "https://github.com/SouOWendel/ordemparanormal_fvtt/issues",
 	"license": "https://github.com/SouOWendel/ordemparanormal_fvtt/blob/main/LICENSE.txt"
 }
