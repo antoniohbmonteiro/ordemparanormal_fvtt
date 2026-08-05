@@ -372,7 +372,8 @@
 		"eletricDamage": "Electricity (El)",
 		"coldDamage": "Cold (Co)",
 		"chemicalDamage": "Chemical (Ch)",
-		"mentalDamage": "Mental (Me)"
+		"mentalDamage": "Mental (Me)",
+		"damageDamage": "Damage (Da)"
 	},
 
 	"op.damageTypeAbv": {

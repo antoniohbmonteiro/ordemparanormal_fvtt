@@ -6,15 +6,6 @@ import { installBatchGuards, withActor } from "../helpers/fixtures.mjs";
  * mutates a previously-broken field, re-fetches via `game.actors.get` and
  * asserts the value survived the cleanData round-trip.
  *
- * Bugs covered:
- *   1. system.details.size was being silently dropped (schema only had `size`
- *      at top level). Template now writes to `system.size` and migrateData
- *      lifts legacy data.
- *   2. system.details.creatureType was being silently dropped (not in schema).
- *      Schema now declares `details.creatureType`.
- *   3. skill.degree.value was ignored on render (derived from degree.label).
- *      Sheet now writes degree.label and the value is derived.
- *   4. damageDamage was an orphan dropdown entry without schema backing.
  */
 Hooks.once("quenchReady", (quench) => {
 	quench.registerBatch(
@@ -69,14 +60,6 @@ Hooks.once("quenchReady", (quench) => {
 						const fresh = game.actors.get(actor.id);
 						assert.isUndefined(fresh.system.details?.size, "legacy details.size must be stripped after migrateData");
 						assert.equal(fresh.system.size, "huge", "value must land on the canonical system.size");
-					});
-				});
-
-				it("resistances.damageDamage is not present in schema-validated data", async () => {
-					await withActor({ name: "[Quench] ghost-damageDamage", type: "threat" }, async (actor) => {
-						await actor.update({ "system.resistances.damageDamage.value": 99 });
-						const fresh = game.actors.get(actor.id);
-						assert.isUndefined(fresh.system.resistances?.damageDamage);
 					});
 				});
 			});

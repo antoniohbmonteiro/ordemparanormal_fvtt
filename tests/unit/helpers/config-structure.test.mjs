@@ -34,10 +34,6 @@ describe("op config structure", () => {
 		expect(Object.keys(op.dropdownDamageType).length).toBeGreaterThanOrEqual(10);
 	});
 
-	it("op.dropdownDamageType does NOT contain damageDamage legacy entry", () => {
-		expect(Object.keys(op.dropdownDamageType)).not.toContain("damageDamage");
-	});
-
 	it('all values in op.skills are strings starting with "op.skill."', () => {
 		for (const value of Object.values(op.skills)) {
 			expect(typeof value).toBe("string");

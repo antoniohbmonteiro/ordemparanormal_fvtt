@@ -96,11 +96,6 @@ describe("ThreatData.defineSchema()", () => {
 		expect(Object.keys(schema)).toContain("size");
 		expect(Object.keys(schema.details.fields)).not.toContain("size");
 	});
-
-	it("resistances schema does NOT contain damageDamage legacy field", () => {
-		const schema = ThreatData.defineSchema();
-		expect(Object.keys(schema.resistances.fields)).not.toContain("damageDamage");
-	});
 });
 
 describe("ThreatData.migrateData()", () => {

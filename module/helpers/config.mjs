@@ -290,6 +290,7 @@ op.dropdownDamageType = {
 	eletricDamage: "op.damageTypeChoices.eletricDamage",
 	chemicalDamage: "op.damageTypeChoices.chemicalDamage",
 	mentalDamage: "op.damageTypeChoices.mentalDamage",
+	damageDamage: "op.damageTypeChoices.damageDamage",
 };
 
 /**

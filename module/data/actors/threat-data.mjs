@@ -145,6 +145,8 @@ export class ThreatData extends foundry.abstract.TypeDataModel {
 				deathDamage: resistanceField(),
 				knowledgeDamage: resistanceField(),
 				energyDamage: resistanceField(),
+				fearDamage: resistanceField(),
+				damageDamage: resistanceField(),
 			}),
 			traits: new fields.SchemaField({
 				smell: new fields.BooleanField({ initial: false }),
