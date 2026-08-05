@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.0.2](https://github.com/SouOWendel/ordemparanormal_fvtt/compare/v8.0.1...v8.0.2) (2026-08-05)
+
+
+### Bug Fixes
+
+* **patch notes:** update version to 8.0.2 in system.json and messages.jsonc ([1981405](https://github.com/SouOWendel/ordemparanormal_fvtt/commit/1981405d42ea00745e202a9cc9f3265aca2e8c90))
+
 ## [8.0.1](https://github.com/SouOWendel/ordemparanormal_fvtt/compare/v8.0.0...v8.0.1) (2026-08-05)
 
 
